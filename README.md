@@ -2,4 +2,6 @@
 
 ## Liste de tâches pour notre projet
 
-# Ajout d'un item à ma liste
+1. [x] Créer le dépot du fichier
+2. [x] Validation de commit du fichier README.md
+3. [x] coucou
