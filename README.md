@@ -40,3 +40,5 @@
 ## Conclusion
 
 ## Contacts
+Aliénor Jarry : [ajarry@insa-toulouse.fr](mailto:ajarry@insa-toulouse.fr)  
+Bastien Maïs : [mais@insa-toulouse.fr](mailto:mais@insa-toulouse.fr)  
