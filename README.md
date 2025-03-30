@@ -23,9 +23,25 @@ Le capteur se compose uniquement d'un morceau de papier sur laquelle une trace d
 L'objectif est de concevoir un dispositif permettant la mesure de déformation à partir d'un capteur low-tech, puis d'évaluer ses performances en le comparant à un capteur commercial.
 
 ## Livrables
-
+- Un Shield PCB branchée sur une carte Arduino UNO, intégrant un capteur graphite, un amplificateur de transimpédance et un module Bluetooth. Idéalement, il incluerait également un écran OLED, un encodeur rotatif, un potentiomètre numérique (remplaçant la résistance R2 dans le circuit amplificateur), ainsi qu'un connecteur pour un servomoteur et un capteur de flexion (afin de comparer ses mesures avec celles du capteur en graphite).
+- Un code Arduino garantissant la gestion de tous les composants et l'acquisition des mesures (mesures de contrainte, échanges via Bluetooth, affichage OLED, encodeur rotatif, potentiomètre numérique et servomoteur).
+- Une application APK Android qui gère l'interface entre le PCB et le code Arduino. L'application doit au minimum afficher la valeur de la résistance de la jauge de contrainte ainsi que sa variation relative sur le smartphone.
+- Un code Arduino dédié au banc de test pour la mesure de la jauge de contrainte.
+- Une datasheet du capteur en graphite (incluant le circuit de transimpédance).
 
 ## Matériel nécessaire
+Pour concevoir notre dispositif électronique, voici la liste des composants nécessaires :
+- Des résistances : 1 de 1 kΩ, 1 de 10 kΩ, 2 de 100 kΩ pour l'amplificateur transimpédance. 1 de 47 kΩ pour le flex sensor (capteur commercial)
+- Des condensateurs : 2 de 100 nF et 1 de 1 μF pour l'amplificateur transimpédance. 1 de 100 nF pour l'encodeur rotatif
+- Un amplificateur opérationnel LTC1050
+- Un potentiomère numérique MCP41050
+- Une carte Arduino UNO
+- Un module Bluetooth HC05
+- Un écran OLED 128×64
+- Un encodeur rotatif
+- Un servomoteur
+- Un flex sensor
+- Un morceau de papier et crayon pour la fabrication du capteur graphite
 
 ## 1. Simulation électronique du capteur sous LTSpice
 
