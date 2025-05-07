@@ -63,7 +63,7 @@ De plus, des filtres ont été ajoutés au montage afin d'atténuer les perturba
 
 **Trois filtres assurant le traitement du signal** :
 
-- 🟩 Filtre en entrée de l'AOP(R1, C1) :  
+- 🟩 Filtre en entrée de l'AOP(R2, C1) :  
  C'est un filtre passe-bas passif de fréquence de coupure fc = 16 Hz. Il filtre les bruits en courant sur le signal d'entrée.
 
 - 🟦Filtre couplé à l'AOP (R4, C2) :  
