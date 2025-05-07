@@ -55,35 +55,33 @@ Nous avons simulé ce montage à l’aide du logiciel LTspice, voici notre sché
 
 Nous avons choisi l'AOP LTC1050 car il est adapté pour traiter de très faibles courants d'entrée. Son faible offset de tension assure une conversion précise du courant en tension.
 
-<u>Deux éléments de simulation sont intégrés au circuit</u> :
+**Deux éléments de simulation sont intégrés au circuit** :
 
-- 🟥 **Rectangle rouge** : Simulation du capteur  
-- 🟪 **Rectangle violet** : Simulation du bruit
+- 🟥 Rectangle rouge : Simulation du capteur  
+- 🟪 Rectangle violet : Simulation du bruit
 
 De plus, des filtres ont été ajoutés au montage afin d'atténuer les perturbations indésirables (par ex : bruits d'alimentation à 50 Hz) 
 
-<u>Trois filtres assurant le traitement du signal</u> :
+**Trois filtres assurant le traitement du signal** :
 
-- 🟩 **Filtre en entrée de l'AOP(C1,R2)** :  
+- 🟩 Filtre en entrée de l'AOP(C1,R2) :  
  C'est un filtre passe-bas passif de fréquence de coupure fc = 16 Hz. Il filtre les bruits en courant sur le signal d'entrée.
 
-- 🟦**Filtre couplé à l'AOP (C2, R4)** :  
+- 🟦Filtre couplé à l'AOP (C2, R4) :  
   C'est un filtre passe-bas actif avec fc = 1,6 Hz. Il filtre la composante du bruit à 50Hz du réseau électrique.
 
-- 🟨 **Filtre en sortie de l'AOP (R5, C4)** :  
+- 🟨 Filtre en sortie de l'AOP (R5, C4) :  
   C'est un filtre passe-bas passif avec fc = 1,6 kHz. Il élimine les parasites générés lors du traitement du signal.
 
-De plus, la résistance R1 en entrée protège contre les décharges électrostatiques en plus de formé avec la capicité C1 un filtre pour les bruits en tension. La résistance R3 sera remplacé plus tard par un potentiomètre digital. Cela nous permettra de régler le gain de notre AOP en fonctions de nos besoins.
+De plus, la résistance R1 en entrée protège contre les décharges électrostatiques. Cette résistance en combinaison avec la capacité C5, forme un filtre pour atténuer les bruits de tension. La résistance R3 sera remplacé plus tard par un potentiomètre digital. Cela nous permettra d'ajuster le gain de notre AOP en fonctions de nos besoins.
 
-De plus, la résistance R1 en entrée protège contre les décharges électrostatiques. Cette résistance en combinaison avec la capacité C1, forme un filtre pour atténuer les bruits de tension. La résistance R3 sera ultérieurement remplacée par un potentiomètre digital, permettant ainsi d'ajuster le gain de notre amplificateur opérationnel en fonction de nos besoins
-
-<u>Voici la réponse de notre circuit afin de vérifier que le capteur est bien amplifié</u> :
+**Voici la réponse de notre circuit afin de vérifier que le capteur est bien amplifié** :
 
 
 
 Nous voyons que le signal est amplifié à 1V. Ainsi, l'Arduino UNO pourra le mesurer. 
 
-<u>Réponse avec un courant alternatif pour vérifier que le bruit est bien filtré</u> :
+**Réponse avec un courant alternatif pour vérifier que le bruit est bien filtré** :
 
 Nous remarquons que le bruit est bien atténué à 50 Hz, d'environ 72 dB.
 ## 2. Design du PCB sous KiCad
