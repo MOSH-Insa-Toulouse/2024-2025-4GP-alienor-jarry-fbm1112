@@ -44,49 +44,48 @@ Pour concevoir notre dispositif électronique, voici la liste des composants né
 - Un morceau de papier et crayon pour la fabrication du capteur graphite
 
 ## 1. Simulation électronique du capteur sous LTSpice
-# Circuit analogique pour capteur graphite
 
-Ce dossier contient le **schéma du circuit analogique** associé au **capteur graphite**. Ce circuit intègre un **amplificateur transimpédance** ainsi que plusieurs **filtres passe-bas**, permettant d’obtenir un signal exploitable par la suite.
+Notre capteur graphite présente une résistance variable de l’ordre du gigaohm(GΩ). Lorsque une tension de 5 V est appliquée à ses bornes, un courant extrêmement faible est généré, de l’ordre de 100 nA en moyenne.
 
-## Contexte
+Un tel signal est difficilement exploitable sans amplification. Pour y remédier, nous avons utilisé un montage transimpédance basé sur un amplificateur opérationnel (AOP). Ce montage permet de convertir ce courant en une tension suffisamment élevée pour être lue par le convertisseur analogique-numérique (ADC) d’une carte Arduino UNO. 
 
-Le capteur délivre un courant très faible, de l’ordre de **100 nA** en moyenne. Sans traitement, ce signal serait difficile à exploiter.  
-L’amplificateur permet donc de convertir ce courant en une **tension mesurable**, tandis que les filtres atténuent les **perturbations indésirables**.
-
-Les interférences à **50 Hz**, liées au réseau électrique, ainsi que d’autres parasites (bruits d’alimentation, de l’horloge, etc.) peuvent fortement impacter la qualité du signal.  
-Un filtrage soigneux est donc **nécessaire**.
-
-## Choix de l’amplificateur
-
-L’**amplificateur opérationnel (AOP) LTC1050** a été choisi car il est spécifiquement conçu pour traiter de très faibles courants d’entrée.  
-Son **offset de tension très faible** garantit une grande précision dans la conversion courant/tension.
-
-## Filtres
-
-Trois éléments de simulation sont intégrés au circuit :
-
-- 🟨 **Rectangle jaune** : simulation du capteur  
-- 🟧 **Rectangle orange + R5** : simulation du bruit
-
-Trois filtres assurent ensuite le nettoyage du signal :
-
-- 🟩 **Filtre en entrée** (R1, C1 – vert) :  
-  Filtre passe-bas passif avec une fréquence de coupure ≈ **16 Hz**  
-  → Atténue les bruits en courant dès l’entrée du signal.
-
-- 🟥 **Filtre dans la boucle AOP** (R3, C4 – rouge) :  
-  Filtre passe-bas avec une fréquence de coupure ≈ **1,6 Hz**  
-  → Efficace contre les interférences à **50 Hz** du réseau électrique.
-
-- 🟪 **Filtre en sortie** (R6, C2 – violet) :  
-  Filtre passe-bas passif avec une fréquence de coupure ≈ **1,6 kHz**  
-  → Élimine les parasites générés lors du traitement du signal.
-
-## Schéma de simulation
+Nous avons simulé ce montage à l’aide du logiciel LTspice, voici notre schéma du circuit analogique : 
 
 
 
+Nous avons choisi l'AOP LTC1050 car il est adapté pour traiter de très faibles courants d'entrée. Son faible offset de tension assure une conversion précise du courant en tension.
 
+<u>Deux éléments de simulation sont intégrés au circuit</u> :
+
+- 🟥 **Rectangle rouge** : Simulation du capteur  
+- 🟪 **Rectangle violet** : Simulation du bruit
+
+De plus, des filtres ont été ajoutés au montage afin d'atténuer les perturbations indésirables (par ex : bruits d'alimentation à 50 Hz) 
+
+<u>Trois filtres assurant le traitement du signal</u> :
+
+- 🟩 **Filtre en entrée de l'AOP(C1,R2)** :  
+ C'est un filtre passe-bas passif de fréquence de coupure fc = 16 Hz. Il filtre les bruits en courant sur le signal d'entrée.
+
+- 🟦**Filtre couplé à l'AOP (C2, R4)** :  
+  C'est un filtre passe-bas actif avec fc = 1,6 Hz. Il filtre la composante du bruit à 50Hz du réseau électrique.
+
+- 🟨 **Filtre en sortie de l'AOP (R5, C4)** :  
+  C'est un filtre passe-bas passif avec fc = 1,6 kHz. Il élimine les parasites générés lors du traitement du signal.
+
+De plus, la résistance R1 en entrée protège contre les décharges électrostatiques en plus de formé avec la capicité C1 un filtre pour les bruits en tension. La résistance R3 sera remplacé plus tard par un potentiomètre digital. Cela nous permettra de régler le gain de notre AOP en fonctions de nos besoins.
+
+De plus, la résistance R1 en entrée protège contre les décharges électrostatiques. Cette résistance en combinaison avec la capacité C1, forme un filtre pour atténuer les bruits de tension. La résistance R3 sera ultérieurement remplacée par un potentiomètre digital, permettant ainsi d'ajuster le gain de notre amplificateur opérationnel en fonction de nos besoins
+
+<u>Voici la réponse de notre circuit afin de vérifier que le capteur est bien amplifié</u> :
+
+
+
+Nous voyons que le signal est amplifié à 1V. Ainsi, l'Arduino UNO pourra le mesurer. 
+
+<u>Réponse avec un courant alternatif pour vérifier que le bruit est bien filtré</u> :
+
+Nous remarquons que le bruit est bien atténué à 50 Hz, d'environ 72 dB.
 ## 2. Design du PCB sous KiCad
 
 ## 3. Réalisation du Shield 
