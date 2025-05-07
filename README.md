@@ -49,8 +49,7 @@ Notre capteur graphite présente une résistance variable de l’ordre du gigaoh
 
 Un tel signal est difficilement exploitable sans amplification. Pour y remédier, nous avons utilisé un montage transimpédance basé sur un amplificateur opérationnel (AOP). Ce montage permet de convertir ce courant en une tension suffisamment élevée pour être lue par le convertisseur analogique-numérique (ADC) d’une carte Arduino UNO. 
 
-Nous avons simulé ce montage à l’aide du logiciel LTspice, voici notre schéma du circuit analogique : 
-
+**Nous avons simulé ce montage à l’aide du logiciel LTspice, voici notre schéma du circuit analogique** : 
 
 
 Nous avons choisi l'AOP LTC1050 car il est adapté pour traiter de très faibles courants d'entrée. Son faible offset de tension assure une conversion précise du courant en tension.
