@@ -75,14 +75,13 @@ De plus, des filtres ont été ajoutés au montage afin d'atténuer les perturba
 De plus, la résistance R1 en entrée protège contre les décharges électrostatiques. Cette résistance en combinaison avec la capacité C5, forme un filtre pour atténuer les bruits de tension. La résistance R3 sera remplacé plus tard par un potentiomètre digital. Cela nous permettra d'ajuster le gain de notre AOP en fonctions de nos besoins.
 
 **Voici la réponse de notre circuit afin de vérifier que le capteur est bien amplifié** :
-
-
-
+![Réponse amplification LTSpice](./Images/amplification_lt_spice.png)
 Nous voyons que le signal est amplifié à 1V. Ainsi, l'Arduino UNO pourra le mesurer. 
 
 **Réponse avec un courant alternatif pour vérifier que le bruit est bien filtré** :
-
+![Réponse filtrage LTSpice](./Images/filtrage_lt_spice.png)
 Nous remarquons que le bruit est bien atténué à 50 Hz, d'environ 72 dB.
+
 ## 2. Design du PCB sous KiCad
 
 ## 3. Réalisation du Shield 
