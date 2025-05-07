@@ -47,11 +47,11 @@ Pour concevoir notre dispositif électronique, voici la liste des composants né
 
 ## 2. Design du PCB sous KiCad
 
-## 3. Code Arduino
+## 3. Réalisation du Shield 
 
-## 4. Application Android APK sous MIT App Inventor
+## 4. Code Arduino 
 
-## 5. Réalisation du Shield
+## 5. Application Android APK sous MIT App Inventor
 
 ## 6. Banc de test
 
