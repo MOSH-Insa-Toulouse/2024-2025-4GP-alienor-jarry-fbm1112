@@ -44,6 +44,48 @@ Pour concevoir notre dispositif électronique, voici la liste des composants né
 - Un morceau de papier et crayon pour la fabrication du capteur graphite
 
 ## 1. Simulation électronique du capteur sous LTSpice
+# Circuit analogique pour capteur graphite
+
+Ce dossier contient le **schéma du circuit analogique** associé au **capteur graphite**. Ce circuit intègre un **amplificateur transimpédance** ainsi que plusieurs **filtres passe-bas**, permettant d’obtenir un signal exploitable par la suite.
+
+## Contexte
+
+Le capteur délivre un courant très faible, de l’ordre de **100 nA** en moyenne. Sans traitement, ce signal serait difficile à exploiter.  
+L’amplificateur permet donc de convertir ce courant en une **tension mesurable**, tandis que les filtres atténuent les **perturbations indésirables**.
+
+Les interférences à **50 Hz**, liées au réseau électrique, ainsi que d’autres parasites (bruits d’alimentation, de l’horloge, etc.) peuvent fortement impacter la qualité du signal.  
+Un filtrage soigneux est donc **nécessaire**.
+
+## Choix de l’amplificateur
+
+L’**amplificateur opérationnel (AOP) LTC1050** a été choisi car il est spécifiquement conçu pour traiter de très faibles courants d’entrée.  
+Son **offset de tension très faible** garantit une grande précision dans la conversion courant/tension.
+
+## Filtres
+
+Trois éléments de simulation sont intégrés au circuit :
+
+- 🟨 **Rectangle jaune** : simulation du capteur  
+- 🟧 **Rectangle orange + R5** : simulation du bruit
+
+Trois filtres assurent ensuite le nettoyage du signal :
+
+- 🟩 **Filtre en entrée** (R1, C1 – vert) :  
+  Filtre passe-bas passif avec une fréquence de coupure ≈ **16 Hz**  
+  → Atténue les bruits en courant dès l’entrée du signal.
+
+- 🟥 **Filtre dans la boucle AOP** (R3, C4 – rouge) :  
+  Filtre passe-bas avec une fréquence de coupure ≈ **1,6 Hz**  
+  → Efficace contre les interférences à **50 Hz** du réseau électrique.
+
+- 🟪 **Filtre en sortie** (R6, C2 – violet) :  
+  Filtre passe-bas passif avec une fréquence de coupure ≈ **1,6 kHz**  
+  → Élimine les parasites générés lors du traitement du signal.
+
+## Schéma de simulation
+
+
+
 
 ## 2. Design du PCB sous KiCad
 
