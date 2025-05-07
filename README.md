@@ -45,7 +45,7 @@ Pour concevoir notre dispositif électronique, voici la liste des composants né
 
 ## 1. Simulation électronique du capteur sous LTSpice
 
-Notre capteur graphite présente une résistance variable de l’ordre du gigaohm(GΩ). Lorsque une tension de 5 V est appliquée à ses bornes, un courant extrêmement faible est généré, de l’ordre de 100 nA en moyenne.
+Notre capteur graphite présente une résistance variable de l’ordre du gigaohm (GΩ). Lorsque une tension de 5V est appliquée à ses bornes, un courant extrêmement faible est généré, de l’ordre de 100 nA en moyenne.
 
 Un tel signal est difficilement exploitable sans amplification. Pour y remédier, nous avons utilisé un montage transimpédance basé sur un amplificateur opérationnel (AOP). Ce montage permet de convertir ce courant en une tension suffisamment élevée pour être lue par le convertisseur analogique-numérique (ADC) d’une carte Arduino UNO. 
 
@@ -56,17 +56,17 @@ Nous avons choisi l'AOP LTC1050 car il est adapté pour traiter de très faibles
 
 **Deux éléments de simulation sont intégrés au circuit** :
 
-- 🟥 Rectangle rouge : Simulation du capteur  
-- 🟪 Rectangle violet : Simulation du bruit
+- 🟥 Simulation du capteur  
+- 🟪 Simulation du bruit
 
 De plus, des filtres ont été ajoutés au montage afin d'atténuer les perturbations indésirables (par ex : bruits d'alimentation à 50 Hz) 
 
 **Trois filtres assurant le traitement du signal** :
 
-- 🟩 Filtre en entrée de l'AOP(C1,R2) :  
+- 🟩 Filtre en entrée de l'AOP(R1, C1) :  
  C'est un filtre passe-bas passif de fréquence de coupure fc = 16 Hz. Il filtre les bruits en courant sur le signal d'entrée.
 
-- 🟦Filtre couplé à l'AOP (C2, R4) :  
+- 🟦Filtre couplé à l'AOP (R4, C2) :  
   C'est un filtre passe-bas actif avec fc = 1,6 Hz. Il filtre la composante du bruit à 50Hz du réseau électrique.
 
 - 🟨 Filtre en sortie de l'AOP (R5, C4) :  
