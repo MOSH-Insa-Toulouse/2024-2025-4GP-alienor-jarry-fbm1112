@@ -107,10 +107,10 @@ Toutes les ressources utilisées pour notre Kicad (empreintes, schéma etc...) s
 
 Nous avons fait quelques erreurs concernant les empreintes de nos modules.
 
-Servomoteur :
+**Servomoteur** :
 Nous avons inversé les broches GND et 5V. 
 
-Bluetooth HC-05 : 
+**Bluetooth HC-05** : 
 L'empreinte de notre Bluetooth n'est pas correcte. Nous avions mis dans l'ordre la broche VCC, GND, TX, RX, ENABLE et STATE alors que la broche ENABLE est la première. Voici les broches correctes du Bluetooth :
 
 <img src="./Images/HC-05.png" alt="HC-05" width="230"/>
