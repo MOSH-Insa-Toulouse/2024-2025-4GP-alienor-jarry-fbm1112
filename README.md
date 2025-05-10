@@ -88,7 +88,7 @@ Notre PCB a été conçue sur le logigiel Kicad (version 9).
 
 Nous avons tout d'abord réalisé la schématique en reproduisant le circuit transimpédance (en enlevant la partie simulant le bruit). Nous avons  remplacé la résistance R3 par un potentiomètre digital. Cela nous permet d'ajuster le gain de notre AOP en fonctions de nos besoins. Également, nous avons créé les symboles des différents composants/modules intégrés. Ces modules assureront une mesure précise de notre capteur en graphite et permettra de comparer les résultats obtenus.
 
-Voici le schéma électrique de l'ensemble de notre montage :
+**Voici le schéma électrique de l'ensemble de notre montage** :
 ![Schematique ](./Images/Schematique.png)
 
 Ensuite, nous avons réalisé les empreintes de nos composants en prenant en compte leurs caractéristiques techniques : nombre de pins, espacement, dimensions, géométrie,...
@@ -96,16 +96,25 @@ afin de les placer sur notre PCB.
 
 Puis, nous sommes allés dans l'onglet "éditeur de PCB" sous Kicad pour designer notre circuit. Nous nous sommes appuyés sur un modèle de carte Arduino Uno. Nous avons ainsi placé nos différents composants, de manière à regouper les composants du circuit transmpédance. De plus les modules, et les composants du circuit transimpédance devaient être placés proches de leurs branchements Arduino respectifs. Nous sommes ensuite passés à la partie routage du circuit. Notre difficulté principale a été d’optimiser le placement des composants afin d’éviter un maximun l’utilisation de vias, notamment pour les connexions au plan de masse (GND). Nous avons tout de même 3 vias sur notre PCB. Enfin, nous avons mis en place un plan de masse pour relier efficacement toutes les pins GND des composants au GND.
 
-Voici le résultat final obtenu de notre routage : 
+**Voici le résultat final obtenu de notre routage** : 
 
-Voici le rendu 3D de notre PCB, avec ses différents modules et composants intégrés :
+**Voici le rendu 3D de notre PCB, avec ses différents modules et composants intégrés**:
 ![PCB_3D ](./Images/PCB_3D.png)
 
 Toutes les ressources utilisées pour notre Kicad (empreintes, schéma etc...) sont disponibles dans notre dossier Kicad.
 
+**Erreurs réalisées** : 
+Nous avons fait quelques erreurs concernant les empreintes de nos modules.
 
-Erreurs réalisés : 
-      
+Servomoteur :
+Nous avons inversé les broches GND et 5V. 
+
+Bluetooth HC-05 : 
+L'empreinte de notre Bluetooth n'est pas correcte. Nous avions mis dans l'ordre la broche VCC, GND, TX, RX, ENABLE et STATE alors que la broche ENABLE est la première. Voici les broches correctes du Bluetooth :
+![HC-05](./Images/HC-05.png)
+Un conseil serait de se baser sur la datasheet de chaques composant afin de réaliser les empreintes! De plus, il faut faire attention concerant les broches TX et RX du Bluetooth. La broche RX de la carte Arduino doit être raccordée à la broche TX du Bluetooth, et la broche TX du Arduino à la broche RX du Bluetooth.
+Nous avons résolu le problème des broches Bluetooth en utilisant des connecteur mâles, femelles permettant de brancher correctement le Bluetooth.
+
 
 ## 3. Réalisation du Shield 
 un flexsensor servant de témoin, afin de pouvoir comparer nos mesures avec celle du capteur en graphite
