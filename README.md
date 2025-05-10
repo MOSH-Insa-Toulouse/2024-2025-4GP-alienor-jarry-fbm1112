@@ -124,6 +124,24 @@ un flexsensor servant de témoin, afin de pouvoir comparer nos mesures avec cell
 un module bluetooth HC-05 afin de pouvoir communiquer avec notre circuit depuis notre téléphone depuis une application mobile que nous coderons nous-même.
 un écran OLED ainsi que trois boutons poussoirs afin de pouvoir visualiser le résultats de nos mesures et pouvoir naviguer simplement dans les différents menus permettant diverses mesures
 
+Grâce à notre projet réalisé sous KiCad, nous avons pu générer le masque de gravure de notre PCB. Nous avons ensuite transmis notre fichier à Cathy, qui s’est chargée de l’impression et de la fabrication du circuit.
+
+Elle a procédé ainsi :
+
+Impression du calque de la PCB
+Insolation UV d’une plaque en époxy recouverte d’une fine couche de cuivre et d’une résine photosensible.
+Développement de la plaque dans un révélateur pour éliminer la résine non exposée.
+Gravure des pistes dans un bain de perchlorure de fer, afin de retirer le cuivre non protégé.
+Nettoyage final à l’acétone pour enlever les résidus de résine restants.
+Un grand merci à Cathy pour le temps qu’elle a consacré à la fabrication de notre PCB!
+
+Assemblage du circuit
+
+Nous avons ensuite réalisé le perçage de la plaquette afin de pouvoir y insérer les différents composants selon le schéma généré avec KiCad.
+Une fois le perçage terminé, nous avons procédé à la soudure des composants sur la carte, en respectant le plan de câblage.
+
+photos :
+
 ## 4. Code Arduino 
 
 ## 5. Application Android APK sous MIT App Inventor
