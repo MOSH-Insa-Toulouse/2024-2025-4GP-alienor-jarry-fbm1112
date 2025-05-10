@@ -89,15 +89,17 @@ Notre PCB a été conçue sur le logigiel Kicad (version 9).
 Nous avons tout d'abord réalisé la schématique en reproduisant le circuit transimpédance (en enlevant la partie simulant le bruit). Nous avons  remplacé la résistance R3 par un potentiomètre digital. Cela nous permet d'ajuster le gain de notre AOP en fonctions de nos besoins. Également, nous avons créé les symboles des différents composants/modules intégrés. Ces modules assureront une mesure précise de notre capteur en graphite et permettra de comparer les résultats obtenus.
 
 Voici le schéma électrique de l'ensemble de notre montage :
+![Schematique ](./Images/Schematique.png)
 
 Ensuite, nous avons réalisé les empreintes de nos composants en prenant en compte leurs caractéristiques techniques : nombre de pins, espacement, dimensions, géométrie,...
 afin de les placer sur notre PCB. 
 
-Puis, nous sommes allés dans l'onglet "éditeur de PCB" sous Kicad pour designer notre circuit. Nous nous sommes appuyés sur un template de carte Arduino Uno. Nous avons ainsi placé nos différents composants, de telle sorte que les composants du circuit transmpédance soit regroupés. De plus les modules, et le circuit transimpédance devaient être placés proches de leurs branchements Arduino respectifs. Nous sommes ensuite passés à la partie routage du circuit. Notre difficulté principale a été d’optimiser le placement des composants afin d’éviter un maximun l’utilisation de vias, notamment pour les connexions au plan de masse (GND). Nous avons tout de même 3 vias sur notre PCB. Enfin, Mise en place d’un plan de masse pour relier efficacement les pistes au GND.
+Puis, nous sommes allés dans l'onglet "éditeur de PCB" sous Kicad pour designer notre circuit. Nous nous sommes appuyés sur un modèle de carte Arduino Uno. Nous avons ainsi placé nos différents composants, de manière à regouper les composants du circuit transmpédance. De plus les modules, et les composants du circuit transimpédance devaient être placés proches de leurs branchements Arduino respectifs. Nous sommes ensuite passés à la partie routage du circuit. Notre difficulté principale a été d’optimiser le placement des composants afin d’éviter un maximun l’utilisation de vias, notamment pour les connexions au plan de masse (GND). Nous avons tout de même 3 vias sur notre PCB. Enfin, nous avons mis en place un plan de masse pour relier efficacement toutes les pins GND des composants au GND.
 
 Voici le résultat final obtenu de notre routage : 
 
 Voici le rendu 3D de notre PCB, avec ses différents modules et composants intégrés :
+![PCB_3D ](./Images/PCB_3D.png)
 
 Toutes les ressources utilisées pour notre Kicad (empreintes, schéma etc...) sont disponibles dans notre dossier Kicad.
 
