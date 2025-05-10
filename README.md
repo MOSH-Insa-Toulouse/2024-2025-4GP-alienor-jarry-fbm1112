@@ -103,7 +103,7 @@ Puis, nous sommes allés dans l'onglet "éditeur de PCB" sous Kicad pour designe
 
 Toutes les ressources utilisées pour notre Kicad (empreintes, schéma etc...) sont disponibles dans notre dossier Kicad.
 
-**Erreurs réalisées** : 
+### **Erreurs réalisées** : 
 
 Nous avons fait quelques erreurs concernant les empreintes de nos modules.
 
