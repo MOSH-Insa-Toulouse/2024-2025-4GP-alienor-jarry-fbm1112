@@ -83,6 +83,35 @@ Nous voyons que le signal est amplifié à 1V. Ainsi, l'Arduino UNO pourra le me
 Nous remarquons que le bruit est bien atténué à 50 Hz, d'environ 72 dB.
 
 ## 2. Design du PCB sous KiCad
+paul et niels : 
+      Afin de réaliser notre PCB, nous avons reproduit le circuit précédent sur Kicad 7.0. Nous avons remplacé la résistance R2 par un potentiomètre numérique afin de pouvoir faire varier le gain de notre AOP. Egalement, nous avons rajouté divers composants afin de pouvoir mesurer efficacement notre capteur graphite et comparé les résultats obtenus :
+
+un flexsensor servant de témoin, afin de pouvoir comparer nos mesures avec celle du capteur en graphite
+un module bluetooth HC-05 afin de pouvoir communiquer avec notre circuit depuis notre téléphone depuis une application mobile que nous coderons nous-même.
+un écran OLED ainsi que trois boutons poussoirs afin de pouvoir visualiser le résultats de nos mesures et pouvoir naviguer simplement dans les différents menus permettant diverses mesures
+      Tous nos composants seront installés sur un shield d'Arduino UNO.
+
+      Nous avons commencé par réaliser les symboles des différents composants et reproduire le schéma électrique complet sur Kicad. Voici le schéma électrique de l'ensemble de notre montage :
+Nous avons par la suite réalisé les empreintes de nos composants afin de les placer sur notre PCB. Notre difficulté principale a été de placer les composants de sorte qu'il n'y ait pas de via, notamment pour le GND. Voici le résultat final :
+Et voici le rendu 3D que nous obtenu avec ces routages :
+Toutes les ressources utilisées pour notre Kicad (empreintes, schéma etc...) sont disponibles dans notre dossier Kicad.
+
+
+maelys : 
+Cette étape du projet avait pour objectif de concevoir le PCB du circuit transimpédance à l’aide du logiciel KiCad, en s’appuyant sur un template de carte Arduino Uno. Plusieurs étapes ont été nécessaires :
+
+Création de la schématique du circuit transimpédance, incluant la définition de symboles personnalisés pour les composants absents de la bibliothèque KiCad.
+Conception des empreintes physiques de ces composants, en prenant en compte leurs caractéristiques techniques : nombre de pins, espacement, dimensions, géométrie, etc.
+Routage du circuit généré via la vue schématique.
+Mise en place d’un plan de masse pour relier efficacement les pistes au GND.
+Voici le schéma électrique de l'ensemble de notre montage :
+Nous avons conçu les empreintes physiques de nos composants afin de pouvoir les positionner correctement sur le PCB et nous avons fait le routage. La principale difficulté rencontrée a été d’optimiser le placement des composants afin d’éviter l’utilisation de vias, notamment pour les connexions au plan de masse (GND). Objectif réussi nous avons utilisé 0 via !
+
+Voici le résultat final obtenu de notre routage :
+Voici la version 3D :
+
+erreurs réalises 
+      
 
 ## 3. Réalisation du Shield 
 
