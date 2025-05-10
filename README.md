@@ -111,9 +111,9 @@ Nous avons inversé les broches GND et 5V.
 
 Bluetooth HC-05 : 
 L'empreinte de notre Bluetooth n'est pas correcte. Nous avions mis dans l'ordre la broche VCC, GND, TX, RX, ENABLE et STATE alors que la broche ENABLE est la première. Voici les broches correctes du Bluetooth :
-![HC-05](./Images/HC-05.png)
+<img src="./Images/HC-05.png" alt="HC-05" width="60"/>
 Un conseil serait de se baser sur la datasheet de chaques composant afin de réaliser les empreintes! De plus, il faut faire attention concerant les broches TX et RX du Bluetooth. La broche RX de la carte Arduino doit être raccordée à la broche TX du Bluetooth, et la broche TX du Arduino à la broche RX du Bluetooth.
-Nous avons résolu le problème des broches Bluetooth en utilisant des connecteur mâles, femelles permettant de brancher correctement le Bluetooth.
+Nous avons résolu le problème des pins Bluetooth en utilisant des connecteur mâles, femelles permettant de brancher correctement le Bluetooth.
 
 
 ## 3. Réalisation du Shield 
