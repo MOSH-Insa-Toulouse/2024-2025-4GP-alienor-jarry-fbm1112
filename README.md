@@ -72,7 +72,7 @@ De plus, des filtres ont été ajoutés au montage afin d'atténuer les perturba
 - 🟨 Filtre en sortie de l'AOP (R5, C4) :  
   C'est un filtre passe-bas passif avec fc = 1,6 kHz. Il élimine les parasites générés lors du traitement du signal.
 
-De plus, la résistance R1 en entrée protège contre les décharges électrostatiques. Cette résistance en combinaison avec la capacité C5, forme un filtre pour atténuer les bruits de tension. La résistance R3 sera remplacé plus tard par un potentiomètre digital. Cela nous permettra d'ajuster le gain de notre AOP en fonctions de nos besoins.
+De plus, la résistance R1 en entrée protège contre les décharges électrostatiques. Cette résistance en combinaison avec la capacité C5, forme un filtre pour atténuer les bruits de tension. 
 
 **Voici la réponse de notre circuit afin de vérifier que le capteur est bien amplifié** :
 ![Réponse amplification LTSpice](./Images/amplification_lt_spice.png)
@@ -83,37 +83,32 @@ Nous voyons que le signal est amplifié à 1V. Ainsi, l'Arduino UNO pourra le me
 Nous remarquons que le bruit est bien atténué à 50 Hz, d'environ 72 dB.
 
 ## 2. Design du PCB sous KiCad
-paul et niels : 
-      Afin de réaliser notre PCB, nous avons reproduit le circuit précédent sur Kicad 7.0. Nous avons remplacé la résistance R2 par un potentiomètre numérique afin de pouvoir faire varier le gain de notre AOP. Egalement, nous avons rajouté divers composants afin de pouvoir mesurer efficacement notre capteur graphite et comparé les résultats obtenus :
 
-un flexsensor servant de témoin, afin de pouvoir comparer nos mesures avec celle du capteur en graphite
-un module bluetooth HC-05 afin de pouvoir communiquer avec notre circuit depuis notre téléphone depuis une application mobile que nous coderons nous-même.
-un écran OLED ainsi que trois boutons poussoirs afin de pouvoir visualiser le résultats de nos mesures et pouvoir naviguer simplement dans les différents menus permettant diverses mesures
-      Tous nos composants seront installés sur un shield d'Arduino UNO.
+Notre PCB a été conçue sur le logigiel Kicad (version 9).
 
-      Nous avons commencé par réaliser les symboles des différents composants et reproduire le schéma électrique complet sur Kicad. Voici le schéma électrique de l'ensemble de notre montage :
-Nous avons par la suite réalisé les empreintes de nos composants afin de les placer sur notre PCB. Notre difficulté principale a été de placer les composants de sorte qu'il n'y ait pas de via, notamment pour le GND. Voici le résultat final :
-Et voici le rendu 3D que nous obtenu avec ces routages :
+Nous avons tout d'abord réalisé la schématique en reproduisant le circuit transimpédance (en enlevant la partie simulant le bruit). Nous avons  remplacé la résistance R3 par un potentiomètre digital. Cela nous permet d'ajuster le gain de notre AOP en fonctions de nos besoins. Également, nous avons créé les symboles des différents composants/modules intégrés. Ces modules assureront une mesure précise de notre capteur en graphite et permettra de comparer les résultats obtenus.
+
+Voici le schéma électrique de l'ensemble de notre montage :
+
+Ensuite, nous avons réalisé les empreintes de nos composants en prenant en compte leurs caractéristiques techniques : nombre de pins, espacement, dimensions, géométrie,...
+afin de les placer sur notre PCB. 
+
+Puis, nous sommes allés dans l'onglet "éditeur de PCB" sous Kicad pour designer notre circuit. Nous nous sommes appuyés sur un template de carte Arduino Uno. Nous avons ainsi placé nos différents composants, de telle sorte que les composants du circuit transmpédance soit regroupés. De plus les modules, et le circuit transimpédance devaient être placés proches de leurs branchements Arduino respectifs. Nous sommes ensuite passés à la partie routage du circuit. Notre difficulté principale a été d’optimiser le placement des composants afin d’éviter un maximun l’utilisation de vias, notamment pour les connexions au plan de masse (GND). Nous avons tout de même 3 vias sur notre PCB. Enfin, Mise en place d’un plan de masse pour relier efficacement les pistes au GND.
+
+Voici le résultat final obtenu de notre routage : 
+
+Voici le rendu 3D de notre PCB, avec ses différents modules et composants intégrés :
+
 Toutes les ressources utilisées pour notre Kicad (empreintes, schéma etc...) sont disponibles dans notre dossier Kicad.
 
 
-maelys : 
-Cette étape du projet avait pour objectif de concevoir le PCB du circuit transimpédance à l’aide du logiciel KiCad, en s’appuyant sur un template de carte Arduino Uno. Plusieurs étapes ont été nécessaires :
-
-Création de la schématique du circuit transimpédance, incluant la définition de symboles personnalisés pour les composants absents de la bibliothèque KiCad.
-Conception des empreintes physiques de ces composants, en prenant en compte leurs caractéristiques techniques : nombre de pins, espacement, dimensions, géométrie, etc.
-Routage du circuit généré via la vue schématique.
-Mise en place d’un plan de masse pour relier efficacement les pistes au GND.
-Voici le schéma électrique de l'ensemble de notre montage :
-Nous avons conçu les empreintes physiques de nos composants afin de pouvoir les positionner correctement sur le PCB et nous avons fait le routage. La principale difficulté rencontrée a été d’optimiser le placement des composants afin d’éviter l’utilisation de vias, notamment pour les connexions au plan de masse (GND). Objectif réussi nous avons utilisé 0 via !
-
-Voici le résultat final obtenu de notre routage :
-Voici la version 3D :
-
-erreurs réalises 
+Erreurs réalisés : 
       
 
 ## 3. Réalisation du Shield 
+un flexsensor servant de témoin, afin de pouvoir comparer nos mesures avec celle du capteur en graphite
+un module bluetooth HC-05 afin de pouvoir communiquer avec notre circuit depuis notre téléphone depuis une application mobile que nous coderons nous-même.
+un écran OLED ainsi que trois boutons poussoirs afin de pouvoir visualiser le résultats de nos mesures et pouvoir naviguer simplement dans les différents menus permettant diverses mesures
 
 ## 4. Code Arduino 
 
