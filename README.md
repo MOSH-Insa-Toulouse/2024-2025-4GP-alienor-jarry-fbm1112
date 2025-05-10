@@ -97,6 +97,7 @@ afin de les placer sur notre PCB.
 Puis, nous sommes allés dans l'onglet "éditeur de PCB" sous Kicad pour designer notre circuit. Nous nous sommes appuyés sur un modèle de carte Arduino Uno. Nous avons ainsi placé nos différents composants, de manière à regouper les composants du circuit transmpédance. De plus les modules, et les composants du circuit transimpédance devaient être placés proches de leurs branchements Arduino respectifs. Nous sommes ensuite passés à la partie routage du circuit. Notre principale difficulté a été d’optimiser le placement des composants afin de limiter au maximum l’utilisation de vias, notamment pour les connexions au GND. Nous avons tout de même trois vias sur notre PCB. Pour garantir une bonne connexion entre toutes les broches GND des composants, nous avons mis en place un plan de masse.
 
 **Voici le résultat final obtenu de notre routage** : 
+![Routage_PCB ](./Images/Routage_PCB.png)
 
 **Voici le rendu 3D de notre PCB, avec ses différents modules et composants intégrés**:
 ![PCB_3D ](./Images/PCB_3D.png)
