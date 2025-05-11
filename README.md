@@ -131,7 +131,13 @@ Nous n’avons pas pu manipuler directement, mais nous avons tout de même pu ob
 3. Gravure : La plaque est ensuite immergée dans un bain de perchlorure de fer, qui dissout le cuivre non protégé par la résine durcie, formant ainsi les pistes du circuit imprimé.
 4. Nettoyage à l’acétone pour éliminer les résidus de résine restants après la gravure.
 
-Nous tenions à grandement remercier Cathy pour son aide tout au long du projet, et en particulier pour l'impression de notre PCB.
+**Voici une photo du masque de gravure et une photo de notre PCB une fois imprimé** :
+<p align="center">
+  <img src="/Images/calque_PCB.png" alt="calque_PCB" width="45%"/>
+  <img src="/Images/PCB_imprime.png" alt="PCB_imprime" width="45%"/>
+</p>
+
+**Nous tenions à grandement remercier Cathy pour son aide tout au long du projet, et en particulier pour l'impression de notre PCB.**
 
 ### Assemblage du circuit
 
