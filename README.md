@@ -121,19 +121,17 @@ Nous avons résolu le problème des pins Bluetooth en utilisant des connecteur m
 
 
 ## 3. Réalisation du Shield 
-un flexsensor servant de témoin, afin de pouvoir comparer nos mesures avec celle du capteur en graphite
-un module bluetooth HC-05 afin de pouvoir communiquer avec notre circuit depuis notre téléphone depuis une application mobile que nous coderons nous-même.
-un écran OLED ainsi que trois boutons poussoirs afin de pouvoir visualiser le résultats de nos mesures et pouvoir naviguer simplement dans les différents menus permettant diverses mesures
 
-Grâce à notre projet réalisé sous KiCad, nous avons pu générer le masque de gravure de notre PCB. Nous avons ensuite transmis notre fichier à Cathy, qui s’est chargée de l’impression et de la fabrication du circuit.
+Une fois notre PCB finalisé sous KiCad, nous l’avons envoyé à Cathy afin qu’elle puisse vérifier que la PCB était conforme et prête pour une impression correcte. Elle nous a également généré le masque de gravure de notre PCB. Ensuite, nous sommes allées avec Cathy au GEI afin d’imprimer notre circuit.
 
-Elle a procédé ainsi :
+Nous n’avons pas pu manipuler directement, mais nous avons tout de même pu observer le processus de fabrication de la carte. Cathy a procédé ainsi :
 
-Impression du calque de la PCB
-Insolation UV d’une plaque en époxy recouverte d’une fine couche de cuivre et d’une résine photosensible.
-Développement de la plaque dans un révélateur pour éliminer la résine non exposée.
-Gravure des pistes dans un bain de perchlorure de fer, afin de retirer le cuivre non protégé.
-Nettoyage final à l’acétone pour enlever les résidus de résine restants.
+1. Impression du calque de la PCB
+2. Insolation UV d’une plaque en époxy recouverte d’une fine couche de cuivre et d’une résine photosensible.
+3. Développement de la plaque dans un révélateur pour éliminer la résine non exposée.
+4. Gravure des pistes dans un bain de perchlorure de fer, afin de retirer le cuivre non protégé.
+5. Nettoyage final à l’acétone pour enlever les résidus de résine restants.
+   
 Un grand merci à Cathy pour le temps qu’elle a consacré à la fabrication de notre PCB!
 
 Assemblage du circuit
@@ -143,6 +141,9 @@ Une fois le perçage terminé, nous avons procédé à la soudure des composants
 
 photos :
 
+un flexsensor servant de témoin, afin de pouvoir comparer nos mesures avec celle du capteur en graphite
+un module bluetooth HC-05 afin de pouvoir communiquer avec notre circuit depuis notre téléphone depuis une application mobile que nous coderons nous-même.
+un écran OLED ainsi que trois boutons poussoirs afin de pouvoir visualiser le résultats de nos mesures et pouvoir naviguer simplement dans les différents menus permettant diverses mesures
 ## 4. Code Arduino 
 
 ## 5. Application Android APK sous MIT App Inventor
