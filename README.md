@@ -122,7 +122,7 @@ Nous avons résolu le problème des pins Bluetooth en utilisant des connecteur m
 
 ## 3. Réalisation du Shield 
 
-Une fois notre PCB finalisé sous KiCad, nous l’avons envoyé à Cathy afin qu’elle puisse vérifier que la PCB était conforme et prête pour une impression correcte. Puis, nous avons généré le masque de gravure de notre PCB que Cathy s’est chargée d’imprimer. Ensuite, nous sommes allées avec Cathy au GEI afin de tirer notre PCB.
+Une fois notre PCB finalisé sous KiCad, nous l’avons envoyé à Cathy afin qu’elle puisse vérifier que le PCB était conforme et prête pour une impression correcte. Puis, nous avons généré le masque de gravure de notre PCB que Cathy s’est chargée d’imprimer. Ensuite, nous sommes allées avec Cathy au GEI afin de tirer notre PCB.
 
 Nous n’avons pas pu manipuler directement, mais nous avons tout de même pu observer le processus de fabrication de la carte. Cathy a procédé ainsi :
 
@@ -141,7 +141,7 @@ Nous n’avons pas pu manipuler directement, mais nous avons tout de même pu ob
 
 ### Assemblage du circuit
 
-Nous avons ensuite procédé au perçage de la plaquette pour permettre l'insertion des différents composants, en veillant à respecter la taille des trous. Un forêt plus petit était nécessaire pour les résistances et les condensateurs. Une fois le perçage effectué, nous avons soudé les composants sur la PCB. Il faut bien faire attention à souder uniquement sur les pastilles, sauf pour les pastilles GND où un débordement est moins problématique, car elles sont toutes reliées au plan de masse. Un excès de soudure sur ces pastilles pourrait en effet créer des courts-circuits. De plus, nous avons dû ajouter un fil reliant la broche 5V du flex sensor au 5V du module Bluetooth, car une portion de cuivre sur la piste les reliant a été retirée accidentellement en tentant d’enlever un surplus de soudure.
+Nous avons ensuite procédé au perçage de la plaquette pour permettre l'insertion des différents composants, en veillant à respecter la taille des trous. Un forêt plus petit était nécessaire pour les résistances et les condensateurs. Une fois le perçage effectué, nous avons soudé les composants sur le PCB. Il faut bien faire attention à souder uniquement sur les pastilles, sauf pour les pastilles GND où un débordement est moins problématique, car elles sont toutes reliées au plan de masse. Un excès de soudure sur les pastilles pourrait en effet créer des courts-circuits. De plus, nous avons dû ajouter un fil reliant la broche 5V du flex sensor au 5V du module Bluetooth, car une portion de cuivre sur la piste les reliant a été retirée accidentellement en tentant d’enlever un surplus de soudure.
 
 **Voici une photo de l'assemblage de notre circuit (sans les modules) ainsi qu'une photo de nos soudures** :
 <p align="center">
