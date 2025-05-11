@@ -131,7 +131,7 @@ Nous n’avons pas pu manipuler directement, mais nous avons tout de même pu ob
 3. Gravure : La plaque est ensuite immergée dans un bain de perchlorure de fer, qui dissout le cuivre non protégé par la résine durcie, formant ainsi les pistes du circuit imprimé.
 4. Nettoyage à l’acétone pour éliminer les résidus de résine restants après la gravure.
 
-**Voici une photo du masque de gravure et une photo de notre PCB une fois imprimé** :
+   **Voici une photo du masque de gravure et une photo de notre PCB une fois imprimé** :
 <p align="center">
   <img src="/Images/calque_PCB.png" alt="calque_PCB" width="35%"/>
   <img src="/Images/PCB_imprime.png" alt="PCB_imprime" width="35%"/>
@@ -143,7 +143,7 @@ Nous n’avons pas pu manipuler directement, mais nous avons tout de même pu ob
 
 Nous avons ensuite procédé au perçage de la plaquette pour permettre l'insertion des différents composants, en veillant à respecter la taille des trous. Un forêt plus petit était nécessaire pour les résistances et les condensateurs. Une fois le perçage effectué, nous avons soudé les composants sur la PCB. Il faut bien faire attention à souder uniquement sur les pastilles, sauf pour les pastilles GND où un débordement est moins problématique, car elles sont toutes reliées au plan de masse. Un excès de soudure sur ces pastilles pourrait en effet créer des courts-circuits. De plus, nous avons dû ajouter un fil reliant la broche 5V du flex sensor au 5V du module Bluetooth, car une portion de cuivre sur la piste les reliant a été retirée accidentellement en tentant d’enlever un surplus de soudure.
 
-**Voici une photo de l'assemblage de notre circuit (sans les modules) ainsi qu'une photo de nos soudures **:
+   **Voici une photo de l'assemblage de notre circuit (sans les modules) ainsi qu'une photo de nos soudures** :
 <p align="center">
   <img src="/Images/assemblage_circuit_front.png" alt="assemblage_PCB" width="45%"/>
   <img src="/Images/assemblage_circuit_back.png" alt="soudure" width="45%"/>
