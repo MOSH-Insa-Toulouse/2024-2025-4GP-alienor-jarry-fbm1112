@@ -139,8 +139,8 @@ Nous avons ensuite procédé au perçage de la plaquette pour permettre l'insert
 
 Voici une photo de l'assemblage de notre circuit (sans les modules) ainsi qu'une photo de nos soudures :
 <p align="center">
-  <img src="/Images/assemblage_circuit_front.png" alt="assemblage_PCB" width="150"/>
-  <img src="/Images/assemblage_circuit_back.png" alt="soudure" width="150"/>
+  <img src="/Images/assemblage_circuit_front.png" alt="assemblage_PCB" width="45%"/>
+  <img src="/Images/assemblage_circuit_back.png" alt="soudure" width="45%"/>
 </p>
 
 ## 4. Code Arduino 
