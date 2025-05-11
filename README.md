@@ -133,8 +133,8 @@ Nous n’avons pas pu manipuler directement, mais nous avons tout de même pu ob
 
 **Voici une photo du masque de gravure et une photo de notre PCB une fois imprimé** :
 <p align="center">
-  <img src="/Images/calque_PCB.png" alt="calque_PCB" width="45%"/>
-  <img src="/Images/PCB_imprime.png" alt="PCB_imprime" width="45%"/>
+  <img src="/Images/calque_PCB.png" alt="calque_PCB" width="35%"/>
+  <img src="/Images/PCB_imprime.png" alt="PCB_imprime" width="35%"/>
 </p>
 
 **Nous tenions à grandement remercier Cathy pour son aide tout au long du projet, et en particulier pour l'impression de notre PCB.**
