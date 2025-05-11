@@ -137,10 +137,10 @@ Nous tenions à grandement remercier Cathy pour son aide tout au long du projet,
 
 Nous avons ensuite procédé au perçage de la plaquette pour permettre l'insertion des différents composants, en veillant à respecter la taille des trous. Un forêt plus petit était nécessaire pour les résistances et les condensateurs. Une fois le perçage effectué, nous avons soudé les composants sur la PCB. Il faut bien faire attention à souder uniquement sur les pastilles, sauf pour les pastilles GND où un débordement est moins problématique, car elles sont toutes reliées au plan de masse. Un excès de soudure sur ces pastilles pourrait en effet créer des courts-circuits. De plus, nous avons dû ajouter un fil reliant la broche 5V du flex sensor au 5V du module Bluetooth, car une portion de cuivre sur la piste les reliant a été retirée accidentellement en tentant d’enlever un surplus de soudure.
 
-Voici une photo de nos soudures ainsi que l'assemblage de notre circuit (sans les modules) :
+Voici une photo de l'assemblage de notre circuit (sans les modules) ainsi qu'une photo de nos soudures :
 <p align="center">
-  <img src="chemin/vers/image1.png" alt="soudure" width="45"/>
-  <img src="chemin/vers/image2.png" alt="assemblage_PCB" width="45"/>
+  <img src="/Images/assemblage_circuit_front.png" alt="assemblage_PCB" width="45"/>
+  <img src="/Images/assemblage_circuit_back.png" alt="soudure" width="45"/>
 </p>
 
 ## 4. Code Arduino 
