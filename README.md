@@ -122,33 +122,30 @@ Nous avons résolu le problème des pins Bluetooth en utilisant des connecteur m
 
 ## 3. Réalisation du Shield 
 
-Une fois notre PCB finalisé sous KiCad, nous l’avons envoyé à Cathy afin qu’elle puisse vérifier que la PCB était conforme et prête pour une impression correcte. Elle nous a également généré le masque de gravure de notre PCB. Ensuite, nous sommes allées avec Cathy au GEI afin d’imprimer notre circuit.
+Une fois notre PCB finalisé sous KiCad, nous l’avons envoyé à Cathy afin qu’elle puisse vérifier que la PCB était conforme et prête pour une impression correcte. Puis, nous avons généré le masque de gravure de notre PCB que Cathy s’est chargée d’imprimer. Ensuite, nous sommes allées avec Cathy au GEI afin de tirer notre PCB.
 
 Nous n’avons pas pu manipuler directement, mais nous avons tout de même pu observer le processus de fabrication de la carte. Cathy a procédé ainsi :
 
-1. Impression du calque de la PCB
-2. Insolation UV d’une plaque en époxy recouverte d’une fine couche de cuivre et d’une résine photosensible.
-3. Développement de la plaque dans un révélateur pour éliminer la résine non exposée.
-4. Gravure des pistes dans un bain de perchlorure de fer, afin de retirer le cuivre non protégé.
-5. Nettoyage final à l’acétone pour enlever les résidus de résine restants.
-   
-Un grand merci à Cathy pour le temps qu’elle a consacré à la fabrication de notre PCB!
+1. Insolation UV de la plaque en époxy recouverte d'une fine couche de cuivre (destinée à recevoir le circuit imprimé) et d'une résine photosensible, à travers le masque, pour durcir la résine dans les zones exposées.
+2. Développement : la plaque est plongée dans un révélateur pour éliminer la résine non exposée à la lumière UV, laissant ainsi un motif de résine durcie correspondant au circuit imprimé.
+3. Gravure : La plaque est ensuite immergée dans un bain de perchlorure de fer, qui dissout le cuivre non protégé par la résine durcie, formant ainsi les pistes du circuit imprimé.
+4. Nettoyage à l’acétone pour éliminer les résidus de résine restants après la gravure.
 
-Assemblage du circuit
+Nous tenions à grandement remercier Cathy pour son aide tout au long du projet, et en particulier pour l'impression de notre PCB.
 
-Nous avons ensuite réalisé le perçage de la plaquette afin de pouvoir y insérer les différents composants selon le schéma généré avec KiCad.
-Une fois le perçage terminé, nous avons procédé à la soudure des composants sur la carte, en respectant le plan de câblage.
+### Assemblage du circuit
 
-photos :
+Nous avons ensuite procédé au perçage de la plaquette pour permettre l'insertion des différents composants, en veillant à respecter la taille des trous. Un forêt plus petit était nécessaire pour les résistances et les condensateurs. Une fois le perçage effectué, nous avons soudé les composants sur la PCB.
 
-un flexsensor servant de témoin, afin de pouvoir comparer nos mesures avec celle du capteur en graphite
-un module bluetooth HC-05 afin de pouvoir communiquer avec notre circuit depuis notre téléphone depuis une application mobile que nous coderons nous-même.
-un écran OLED ainsi que trois boutons poussoirs afin de pouvoir visualiser le résultats de nos mesures et pouvoir naviguer simplement dans les différents menus permettant diverses mesures
+Voici 
+
+
 ## 4. Code Arduino 
 
 ## 5. Application Android APK sous MIT App Inventor
 
 ## 6. Banc de test
+dire que servomoteur n'a finalement pas été utilisé !!
 
 ## 7. Résultats
 
