@@ -224,9 +224,9 @@ Ces erreurs expérimentales peuvent être dues à une certaine instabilité dans
 
 **Comparaison entre le capteur graphite et le capteur Flex sensor commercial :**
 
-Enfin, nous avons comparé notre capteur graphite avec un flex sensor commercial. Ce flex sensor ne peut que se déformer qu'en flexion (et non en compression). De plus, nous n'avons pas pu déformer le flex sensor à l'aide du plus petit demi-cercle de diamètre 20mm. En effet, les pins femelles du flex sensor sont directement fixés sur la PCB, ce qui  a limité la flexibilité du flex sensor. Pour avoir le même nombre de points sur le graphe que le flex sensor, nous n'avons donc pas pris en compte le plus petit demi-cercle pour le F, HB et B. Ceci explique la différence de pente pour le F, HB et B entre ce graphe et le premier graphe. 
+Enfin, nous avons comparé notre capteur graphite avec un flex sensor commercial. Ce flex sensor ne peut se déformer qu'en flexion (et non en compression). De plus, nous n'avons pas pu déformer le flex sensor à l'aide du plus petit demi-cercle de diamètre 20mm. En effet, les pins femelles du flex sensor sont directement fixés sur la PCB, ce qui  a limité la flexibilité du flex sensor. Pour avoir le même nombre de points sur le graphe que le flex sensor, nous n'avons donc pas pris en compte le plus petit demi-cercle pour le F, HB et B. Ceci explique la différence de pente pour le F, HB et B entre ce graphe et le premier graphe. 
 
-Le flex sensor a une variation relative très élevée avec une pente a 181,36 comparé au capteur graphite, où la pente est de l'ordre de 20 à 60. Le capteur Flex est donc beaucoup plus sensible à la déformation. Sa réponse est plus régulière, linéaire et plus exploitable en conditions réelles.
+Le flex sensor a une variation relative très élevée avec une pente a environ 180 comparé au capteur graphite, où la pente est de l'ordre de 20 à 60. Le capteur Flex est donc beaucoup plus sensible à la déformation. Sa réponse est plus régulière, linéaire et plus exploitable en conditions réelles.
 
 
 ## 7. Datasheet du capteur
