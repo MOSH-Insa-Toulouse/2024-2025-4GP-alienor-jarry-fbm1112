@@ -194,7 +194,7 @@ La variation relative de la résistance se définit par : ΔR/R0 (avec R0 la ré
 ### Voici les courbes caractéristiques pour des crayons F, HB et B en flexion et en compression :
 <p align="center">
   <img src="/Images/Var_Flexion.png" alt="Var_Flexion" width="48%"/>
-  <img src="/Images/Var_Res_Compression.png" alt="Var_Res_Compression" width="48%"/>
+  <img src="/Images/Var_Res_Compression.png" alt="Var_Res_Compression" width="50%"/>
 </p>
 
 ### Voici le graphe comparant le Flex Sensor et le capteur Graphite pour F, HB et B (en tension) :
