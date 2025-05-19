@@ -22,16 +22,16 @@ const int capteurgraphitePin = A0;  // Pin A0
 float calibre = pow(10,-6); // pour avoir des Mohms
 // Variables pour éviter le delay 
 unsigned long previousMillis = 0;        // will store last time LED was update
-// Variable pour cadencer l'acquisition
-const long interval = 500;           // interval at which to blink (milliseconds) for MesureINST
+// Variable pour cadencer l'acquisition (millisecondes)
+const long interval = 500;
 
 
 // MESURE FLEX SENSOR
-const int flexPin = A1;      // Pin connected to voltage divider output
-const float VCC = 5;      // voltage at Ardunio 5V line
-const float R_DIV = 47000.0;  // resistor used to create a voltage divider
-const float flatResistance = 30000.0; // resistance when flat
-const float bendResistance = 90000.0;  // resistance at 90 deg
+const int flexPin = A1;      // Pin connécté au pont diviseur de tension
+const float VCC = 5;      // voltage de l'arduino à 5V 
+const float R_DIV = 47000.0;  // résistance utilisée pour le pont diviseur de tension
+const float flatResistance = 30000.0; // resistance de départ
+const float bendResistance = 90000.0;  // resistance à 90 degré
 
 //ENCODEUR ROTATOIRE
 #define encoder0PinA  2  //CLK Output A Do not use other pin for clock as we are using interrupt
@@ -127,7 +127,7 @@ void ChoixMenu(){
 
       if (OK==1){
         OK=0;
-        MesureINST();
+        MesureGraph();
       }
     
     }
@@ -217,7 +217,7 @@ void FlexSensor(){
 }
 
 
-void MesureINST()
+void MesureGraph()
 {
   float R4=100000;
   int Vcc=5;
@@ -225,7 +225,7 @@ void MesureINST()
   int R1=10000;
   float Vadc=0;
   float Res=-1;
-  // Affiche l'affichage de mesureINST avant les mesures réelles, comme cela, l'utilisateur peut arreter d'appuyer sur le bouton OK et cela évite de le faire sortir du programme
+  // Affiche l'affichage de mesureINST
   ecranOLED.clearDisplay();                                   // Effaçage de l'intégralité du buffer
   ecranOLED.setTextSize(1);                   // Taille des caractères (1:1, puis 2:1, puis 3:1)
   ecranOLED.setCursor(0, 0);
