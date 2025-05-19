@@ -172,7 +172,7 @@ Le menu affiche 3 choix d'actions possibles :
 
 Pour sélectionner une action du menu, il suffit de tourner la molette et d'appuyer sur le bouton central de l'encodeur. Si l'on souhaite sortir d'une action du menu, nous tournons simplement la molette de l'encodeur.
 
-Ainsi on obtient la résistance du capteur graphite avec la formule suivante :   <img src="./Images/fomule_res.png" alt="res" width="30%"/>
+Ainsi on obtient la résistance du capteur graphite avec la formule suivante :   <img src="./Images/formule_res.png" alt="res" width="30%"/>
 
 Finalement, nous n'avons pas utilisé le servomoteur comme module par manque de temps
 
