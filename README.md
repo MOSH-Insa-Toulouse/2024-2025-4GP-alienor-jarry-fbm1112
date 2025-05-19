@@ -173,16 +173,13 @@ Finalement, nous n'avons pas utilisé le servomoteur comme module par manque de 
 
 ## 5. Application Android APK sous MIT App Inventor
 Comme mentionné dans la partie précèdente, une application mobile a été réalisée sous
-## 6. Banc de test
-Pour spécifier notre capteur graphite et son montage transimpédance, nous avons utilisé le banc de test fabriqué par le binôme Maëlys et Arthur. Un grand merci à eux pour nous avoir prêter leur banc de test. Ce banc de test comporte des demis-cercles avec un rayon de courbure différents.
 
-Ce dispositif se compose de demis-cercles de diamètres différents avec des trous préfabriqués, permettant d’insérer facilement le capteur. Une fois placé dans l’un des trous, le capteur épouse la courbure du demi-cercle correspondant. Cette contrainte appliquée provoque une variation de sa résistance électrique, que nous mesurons.
+## 6. Banc de test
+Pour spécifier notre capteur graphite et son montage transimpédance, nous avons utilisé le banc de test fabriqué par le binôme Maëlys et Arthur. Un grand merci à eux pour nous avoir prêter leur banc de test. Ce banc de test comporte des demis-cercles avec des rayons de courbure différents allant de 2cm à 4,5cm avec un rajout de 0,5cm entre chaque demi-cercles. Au total, il y a 6 demi-cercles. Ce banc de test comporte des encoches pour chaque demi-cerle qui permet d'insérer facilement le capteur. Une fois mis dans l'une de ses encoches, il est plus aisé d'appliquer une traction ou une compression sur le capteur
+ Une fois placé dans l’un des trous, le capteur épouse la courbure du demi-cercle correspondant. Cette contrainte appliquée provoque une variation de sa résistance électrique, que nous mesurons.
 
 Ces demi-cercles, utilisés pour appliquer une contrainte progressive sur le capteur, présentent les caractéristiques suivantes :
 
-Diamètre du plus petit demi-cercle : 20 mm
-Diamètre du plus grand demi-cercle : 45 mm
-Incrément entre chaque modèle : 5 mm
 Ce montage nous permet de relier la déformation mécanique : ε = e / D
 
 à la variation relative de la résistance : ΔR / R₀
@@ -193,7 +190,7 @@ e = 0,2 mm correspond à l’épaisseur du papier conducteur utilisé
 D est le diamètre du demi-cercle sélectionné
 Voici notre banc de test avec ses dimensions :
 
-     Ce sont des demis-cercles, imprimés en 3D, avec un diamètre commençant à 2 cm pour le plus petit et en augmentant de 0.5 cm par créneau. Le plus grand demi-cercle a un diamètre de 5cm. Grâce à ces demis-cercles, nous allons pouvoir calculer la variation de la résistance électrique 
+ Grâce à ces demis-cercles, nous allons pouvoir calculer la variation de la résistance électrique 
 ΔR/R0 en fonction de la déformation ε=e/D
 Nous avons ici mesuré notre épaisseur de notre papier e=0.2mm. Ainsi, nous avons une déformation variant de 0.1 pour le plus petit diamètre à 0.04 pour le plus grand. Voici les courbes caractéristiques pour des crayons 2B, B et HB pour des tensions ou des compressions.
 
