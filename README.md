@@ -184,7 +184,9 @@ Comme mentionné dans la partie précèdente, une application mobile a été ré
 L'application reçoit les données transmis par le module bluetooth HC-05. Elle affiche ensuite la valeur tranmis (des Mohms)
 pour le capteur graphite ou des ohms pour le flex sensor.
 
+
 <img src="./Images/App_face_avant.png" alt="face" width="30%"/>
+
 
 
 
