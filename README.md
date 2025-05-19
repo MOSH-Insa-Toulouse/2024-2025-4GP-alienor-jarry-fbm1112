@@ -220,7 +220,7 @@ Dans notre cas, le crayon le plus dur et le crayon de type F et le plus gras est
 Cette théorie est vérifiée pour le cas des courbes en compression. Nous voyons bien que le type F a la variation relative la plus élevée et le B, la variation la moins élevée.
 Pour le cas des courbes en flexion, la théorie n'est pas totalement vérifiée car le type F a bien la variation de résistance la plus élevée. Cependant, la variation relative la moins élevée est le type HB, alors que cela devrait être le type B. De plus, nous remarquons que nos courbes F, aussi bien en flexion qu'en compression présente un comportement non linéaire marqué. Ces courbes montrent plusieurs irrégularités et pics contrairement aux courbes de type B et HB qui sont plus linéaires.
 
-Ces erreurs expérimentales peuvent être dues à une certaine instabilité dans la réponse du capteur, possiblement liée à une mauvaise homogénéité du dépôt de graphite. Elles peuvent également provenir de la qualité des crayons, des microfissures dans la couche conductrice ou encore d'un contact imparfait entre le graphite et les pinces.
+Ces erreurs expérimentales peuvent être dues à une certaine instabilité dans la réponse du capteur, possiblement liée à une mauvaise homogénéité du dépôt de graphite. Elles peuvent également provenir de la qualité des crayons, des microfissures dans la couche conductrice (lors de la déformation mécanique) ou encore d'un contact imparfait entre le graphite et les pinces.
 
 **Comparaison entre le capteur graphite et le capteur Flex sensor commercial :**
 
