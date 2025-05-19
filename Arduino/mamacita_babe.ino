@@ -12,16 +12,16 @@ SoftwareSerial mySerial(rxPin ,txPin); //Definition du software serial
 #include <Adafruit_SSD1306.h>
 #define nombrePixelsLargeur 128        // Taille de l'écran OLED, en pixel, au niveau de sa largeur
 #define nombrePixelsHauteur 64        // Taille de l'écran OLED, en pixel, au niveau de sa hauteur
-#define brocheResetOLED         -1          // Reset de l'OLED partagé avec l'Arduino (d'où la valeur à -1, et non un numéro de pin)
+#define brocheResetOLED         -1          // Reset de l'OLED partagé avec l'Arduino
 #define adresseI2CecranOLED     0x3C        // Adresse de "mon" écran OLED sur le bus i2c (généralement égal à 0x3C ou 0x3D)
 Adafruit_SSD1306 ecranOLED(nombrePixelsLargeur, nombrePixelsHauteur, &Wire, brocheResetOLED);  
 
 
-// MESURE Pin pour mesure de la tension du capteur //////////
+// Pin pour mesure de la tension du capteur graphite //////////
 const int capteurgraphitePin = A0;  // Pin A0
 float calibre = pow(10,-6); // pour avoir des Mohms
 // Variables pour éviter le delay 
-unsigned long previousMillis = 0;        // will store last time LED was updated
+unsigned long previousMillis = 0;        // will store last time LED was update
 // Variable pour cadencer l'acquisition
 const long interval = 500;           // interval at which to blink (milliseconds) for MesureINST
 
