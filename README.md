@@ -185,7 +185,7 @@ L'application reçoit les données transmis par le module bluetooth HC-05. Elle 
 pour le capteur graphite ou des ohms pour le flex sensor.
 
 
-<img src="./Images/App_face_avant.png" alt="face" width="45%"/>
+<img src="./Images/App_face_avant.jpg" alt="face" width="45%"/>
 
 
 
