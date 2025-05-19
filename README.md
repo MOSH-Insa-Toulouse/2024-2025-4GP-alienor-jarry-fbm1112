@@ -180,24 +180,14 @@ Finalement, nous n'avons pas utilisé le servomoteur comme module par manque de 
 Comme mentionné dans la partie précèdente, une application mobile a été réalisée sous
 
 ## 6. Banc de test
-Pour spécifier notre capteur graphite et son montage transimpédance, nous avons utilisé le banc de test fabriqué par le binôme Maëlys et Arthur. Un grand merci à eux pour nous avoir prêter leur banc de test. Ce banc de test comporte des demis-cercles avec des rayons de courbure différents allant de 2cm à 4,5cm avec un rajout de 0,5cm entre chaque demi-cercles. Au total, il y a 6 demi-cercles. Ce banc de test comporte des encoches pour chaque demi-cerle qui permet d'insérer facilement le capteur. Une fois mis dans l'une de ses encoches, il est plus aisé d'appliquer une traction ou une compression sur le capteur
- Une fois placé dans l’un des trous, le capteur épouse la courbure du demi-cercle correspondant. Cette contrainte appliquée provoque une variation de sa résistance électrique, que nous mesurons.
+Pour spécifier notre capteur graphite et son montage transimpédance, nous avons utilisé le banc de test fabriqué par le binôme Maëlys et Arthur. Un grand merci à eux pour nous avoir prêter leur banc de test. Ce banc de test comporte des demis-cercles avec des diamètres différents allant de 2cm à 4,5cm avec un rajout de 0,5cm entre chaque demi-cercles. Au total, il y a 6 demi-cercles. Ce banc de test comporte des encoches pour chaque demi-cercle qui permet d'insérer facilement le capteur. Une fois le capteur mis dans l'une de ses encoches, il est plus aisé d'appliquer une traction ou une compression sur le capteur. La capteur se déforme en suivant la courbure du demi-cercle. Ainsi, nous appliquons une contrainte qui provoque une variation de la résistance du capteur. Nous allons mesurer cette contrainte en fonction de la déformation.
 
-Ces demi-cercles, utilisés pour appliquer une contrainte progressive sur le capteur, présentent les caractéristiques suivantes :
+La variation relative de la résistance se définit par : ΔR/R0 (avec R0 la résistance initiale du capteur avant sa déformation et ΔR la variation de la résistance après et avant déformation). La déformation est : ε=e/D (avec e=0,2mm l'épaisseur du papier utilisé et D le diamètre du demi-cercle). Nous avons donc une déformation variant de 0.01 pour le plus petit diamètre à 0.004 pour le plus grand. Il faut faire attention de bien mettre les diamètres des demi-cercles en mm! 
 
-Ce montage nous permet de relier la déformation mécanique : ε = e / D
+Voici le banc de test que nous avons utilisé  :
+![Banc_de_Test](./Images/Banc_de_Test.png)
 
-à la variation relative de la résistance : ΔR / R₀
-
-où :
-
-e = 0,2 mm correspond à l’épaisseur du papier conducteur utilisé
-D est le diamètre du demi-cercle sélectionné
-Voici notre banc de test avec ses dimensions :
-
- Grâce à ces demis-cercles, nous allons pouvoir calculer la variation de la résistance électrique 
-ΔR/R0 en fonction de la déformation ε=e/D
-Nous avons ici mesuré notre épaisseur de notre papier e=0.2mm. Ainsi, nous avons une déformation variant de 0.1 pour le plus petit diamètre à 0.04 pour le plus grand. Voici les courbes caractéristiques pour des crayons 2B, B et HB pour des tensions ou des compressions.
+Voici les courbes caractéristiques pour des crayons 2B, B et HB pour des tensions ou des compressions.
 
 ## 7. Résultats
 
