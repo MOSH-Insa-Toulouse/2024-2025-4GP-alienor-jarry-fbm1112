@@ -187,11 +187,16 @@ Pour spécifier notre capteur graphite et son montage transimpédance, nous avon
 
 La variation relative de la résistance se définit par : ΔR/R0 (avec R0 la résistance initiale du capteur avant sa déformation et ΔR la variation de la résistance après et avant déformation). La déformation est : ε=e/D (avec e=0,2mm l'épaisseur du papier utilisé et D le diamètre du demi-cercle). Nous avons donc une déformation variant de 0.01 pour le plus petit diamètre à 0.004 pour le plus grand. Il faut faire attention de bien mettre les diamètres des demi-cercles en mm! 
 
-Voici le banc de test que nous avons utilisé  :
+**Voici le banc de test que nous avons utilisé :**
 
 <img src="./Images/Banc_de_Test.png" alt="Banc_de_Test" width="30%"/>
 
-Voici les courbes caractéristiques pour des crayons 2B, B et HB pour des tensions ou des compressions.
+### Voici les courbes caractéristiques pour des crayons F, HB en tension et en compression :
+<p align="center">
+  <img src="/Images/Var_Res_Tension.png" alt="Var_Res_Tension" width="40%"/>
+  <img src="/Images/Var_Res_Compression.png" alt="Var_Res_Compression" width="40%"/>
+</p>
+
 
 ## 7. Résultats
 
