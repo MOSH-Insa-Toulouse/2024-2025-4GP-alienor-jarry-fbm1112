@@ -189,7 +189,7 @@ pour le capteur graphite ou des ohms pour le flex sensor.
 
 <p align="center">
   <img src="/Images/APP_Block.PNG" alt="Block" width="36.5%"/>
-  <img src="/Images/APP_Block2.PNG" alt="Block2" width="45%"/>
+  <img src="/Images/App_Block2.PNG" alt="Block2" width="45%"/>
 </p>
 
 
