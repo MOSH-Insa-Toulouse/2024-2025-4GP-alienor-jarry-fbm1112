@@ -177,7 +177,7 @@ Ainsi on obtient la résistance du capteur graphite avec la formule suivante :
 
 Et dans notre cas, notre résistance R3 est variable : elle est issue du réglage du potentiomètreà l'aide d'un méthode de dichotomie.
 
-Finalement, nous n'avons pas utilisé le servomoteur comme module par manque de temps
+Finalement, nous n'avons pas utilisé le servomoteur comme module par manque de temps.
 
 ## 5. Application Android APK sous MIT App Inventor
 Comme mentionné dans la partie précèdente, une application mobile a été réalisée sous MIT App Inventor.
@@ -230,6 +230,7 @@ Le flex sensor a une variation relative très élevée avec une pente a 181,36 c
 
 
 ## 7. Datasheet du capteur
+Vous pouvez consulter la datasheet de notre capteur [ici](./datasheet.pdf). (à changer)
 
 ## Conclusion
 
