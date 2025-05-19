@@ -10,8 +10,7 @@
 - [4. Code Arduino](#4-code-arduino)
 - [5. Application Android APK sous MIT App Inventor](#5-application-android-apk-sous-mit-app-inventor)
 - [6. Banc de test](#6-banc-de-test)
-- [7. Résultats](#7-résultats)
-- [8. Datasheet du capteur](#8-datasheet-du-capteur)
+- [7. Datasheet du capteur](#7-datasheet-du-capteur)
 - [Conclusion](#conclusion)
 - [Contacts](#contacts)
 
@@ -192,7 +191,7 @@ La variation relative de la résistance se définit par : ΔR/R0 (avec R0 la ré
 
 <img src="./Images/Banc_de_Test.png" alt="Banc_de_Test" width="30%"/>
 
-### Voici les courbes caractéristiques pour des crayons F, HB et B en tension et en compression :
+### Voici les courbes caractéristiques pour des crayons F, HB et B en flexion et en compression :
 <p align="center">
   <img src="/Images/Var_Res_Tension.png" alt="Var_Res_Tension" width="48%"/>
   <img src="/Images/Var_Res_Compression.png" alt="Var_Res_Compression" width="48%"/>
@@ -201,10 +200,46 @@ La variation relative de la résistance se définit par : ΔR/R0 (avec R0 la ré
 ### Voici le graphe comparant le Flex Sensor et le capteur Graphite pour F, HB et B (en tension) :
 <img src="./Images/Comparaison_Flex_Graphite_Tension.png" alt="Comparaison_Flex_Graphite_Tension" width="60%"/>
 
+ On remarque que la résistance augmente lorsque l'on met le capteur en tension et qu'elle diminue lors de la compression de ce dernier. En tension, la distance entre les atomes de carbones augmente et la résistance augmente avec. Le contraire se produit pour la compression.
+ En fonction de la dureté du crayon utilisé, les variations relatives de résistance changent. Plus le crayon est gras (2H->H->HB->B->2B avec 2B avec le plus de carbone), moins sa variation relative de résistance est élevée.
 
-## 7. Résultats
+ 
+De plus, contrairement, à l'article "Pencil Drawn Strain Gauges and Chemiresistors on Paper" (Cheng-Wei Lin*, Zhibo Zhao*, Jaemyung Kim & Jiaxing Huang), nous avons pu mesurer la résistance avec un crayon 2H.
 
-## 8. Datasheet du capteur
+Enfin, on peut comparer notre capteur avec un flex sensor commercial. Il semblerait que le flex sensor soit plus sensible à la déformation, en plus d'être plus solide pour des déformations importantes. Pour notre capteur, il a un nombre d'utilisation très limité, qui diminue très fortement pour une déformation élevée.
+
+Néanmoins, toutes ces mesures sont à prendre avec du recul au vu des conditions non reproductibles d'essai. En effet, la quantité de graphite déposée au crayon à papier est très variable, induisant ainsi une résistance très variable. Il serait intéressant de développer une méthode afin de déposer une quantité fixe et reproductible de graphite.       Egalement, nous conseillerons de changer de banc de test et d'utiliser un servo-moteur qui permet de créer des conditions plus reproductibles, que ce soit pour le carbone qui n'est pas déposé sur le banc de test mais également par l'angle imposé qui est précisement connu. Autrement, il faudrait reproduire des cercles de diamètres connues mais avec des déformations moins importantes afin de moins endommager le capteur.
+
+Les courbes montrent que le flex sensor présente une variation relative de résistance nettement plus marquée que nos capteurs en graphite.
+
+Capteur Flex sensor : pente ≈ 237,36
+Capteur graphite HB : pente ≈ 43,5
+Capteur graphite H : pente ≈ 34,6
+Capteur graphite 3B : pente ≈ 20,3
+Le capteur Flex est donc beaucoup plus sensible à la déformation. Sa réponse est plus régulière, linéaire et plus exploitable en conditions réelles.
+
+En théorie, lorsque le capteur est soumis en tension, la monocouche de graphite déposée sur le papier s’étire, ce qui augmente la distance entre les atomes de carbone. Cette augmentation de distance entraîne une hausse de la résistance du capteur. À l’inverse, lorsqu’il est soumis à une compression, les atomes de carbone se rapprochent, ce qui réduit la résistance du capteur. La variation relative de résistance dépend également du type de crayon utilisé pour tracer la couche de graphite. Plus le crayon est gras (par exemple, du H vers le HB jusqu’au 3B, qui contient le plus de carbone), plus la variation relative de résistance est faible. Bien que la théorie prévoie une augmentation de la résistance en tension et une diminution en compression, nos résultats expérimentaux ne suivent pas totalement cette tendance attendue :
+Compression
+
+Sur la courbe de compression, on observe bien une diminution de la résistance relative ( \Delta R / R_0 ) lorsque la déformation augmente.
+En revanche, le graphite 3B, censé avoir une plus faible variation relative en théorie (car moins conducteur), présente ici la plus grande variation de résistance.
+
+Extension
+
+En tension, les résultats montrent bien une augmentation de la résistance avec la déformation. Cependant, contrairement à la théorie, le crayon HB présente ici la variation la plus élevée, suivi du H, tandis que le 3B varie beaucoup moins. Cela contredit l’idée selon laquelle les crayons les plus dures (ici H) varient le plus.
+
+Interprétation
+
+En effet, plusieurs facteurs influencent le comportement réel du capteur :
+
+L’uniformité du dépôt de graphite sur le capteur.
+La qualité des crayons
+Le contact électrique entre le graphite et les pinces.
+Comparaison entre le capteur graphite et le capteur Flex sensor commercial
+
+Nous avons comparé les performances de notre capteur graphite artisanal à un capteur flex commercial. La comparaison s’appuie sur les résultats expérimentaux obtenus en extension :
+
+## 7. Datasheet du capteur
 
 ## Conclusion
 
