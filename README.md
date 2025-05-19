@@ -211,6 +211,7 @@ La variation relative de la résistance se définit par : ΔR/R0 (avec R0 la ré
 <img src="./Images/Comparaison_Flex_Graphite.png" alt="Comparaison_Flex_Graphite" width="60%"/>
 
 **Interprétation des courbes et comparaison avec la théorie :**
+
 Nous remarquons que la résistance augmente lorsque nous mettons le capteur en flexion et que la résistance diminue lors de la compression de ce dernier. Ce phénomène est tout à fait attendu : en théorie, lorsqu’on soumet le capteur à une flexion, la monocouche de graphite déposée sur le papier s’étire, augmentant la distance entre les atomes de carbone. Cette augmentation de distance entraîne une hausse de la résistance du capteur. À l’inverse, en compression, les atomes de carbone se rapprochent, entraînant une diminution de la résistance.
 
 Nous remarquons que les variations relatives ne sont pas les mêmes en fonction de la dureté du crayon utilisé. 
@@ -222,6 +223,7 @@ Pour le cas des courbes en flexion, la théorie n'est pas totalement vérifiée 
 Ces erreurs expérimentales peuvent être dues à une certaine instabilité dans la réponse du capteur, possiblement liée à une mauvaise homogénéité du dépôt de graphite. Elles peuvent également provenir de la qualité des crayons, des microfissures dans la couche conductrice ou encore d'un contact imparfait entre le graphite et les pinces.
 
 **Comparaison entre le capteur graphite et le capteur Flex sensor commercial :**
+
 Enfin, nous avons comparé notre capteur graphite avec un flex sensor commercial. Ce flex sensor ne peut que se déformer qu'en flexion (et non en compression). De plus, nous n'avons pas pu déformer le flex sensor à l'aide du plus petit demi-cercle de diamètre 20mm. En effet, les pins femelles du flex sensor sont directement fixés sur la PCB, ce qui qui a limité la flexibilité du flex sensor. Pour avoir le même nombre de points que le flex sensor, nous n'avons donc pas pris en compte le plus petit demi-cercle pour le F, HB et B. Ceci explique la différence de pente pour le F, HB et B entre ce graphe et le premier graphe. 
 
 Le flex sensor a une variation relative très élevée avec une pente a 181,36 comparé au capteur graphite, où la pente est de l'ordre de 20 à 60. Le capteur Flex est donc beaucoup plus sensible à la déformation. Sa réponse est plus régulière, linéaire et plus exploitable en conditions réelles.
