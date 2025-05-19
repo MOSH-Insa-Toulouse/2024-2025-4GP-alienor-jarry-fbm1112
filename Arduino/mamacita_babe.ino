@@ -10,11 +10,11 @@ SoftwareSerial mySerial(rxPin ,txPin); //Definition du software serial
 // Si le programme ne lance rien, même pas le setup, le problème peut venir de là.
 // On peut soit baisser le nombre de pixels dans l'écran, soit utiliser d'autre librairie moins gourmande facilement trouvable sur internet.
 #include <Adafruit_SSD1306.h>
-#define nombreDePixelsEnLargeur 128        // Taille de l'écran OLED, en pixel, au niveau de sa largeur
-#define nombreDePixelsEnHauteur 64        // Taille de l'écran OLED, en pixel, au niveau de sa hauteur
+#define nombrePixelsLargeur 128        // Taille de l'écran OLED, en pixel, au niveau de sa largeur
+#define nombrePixelsHauteur 64        // Taille de l'écran OLED, en pixel, au niveau de sa hauteur
 #define brocheResetOLED         -1          // Reset de l'OLED partagé avec l'Arduino (d'où la valeur à -1, et non un numéro de pin)
 #define adresseI2CecranOLED     0x3C        // Adresse de "mon" écran OLED sur le bus i2c (généralement égal à 0x3C ou 0x3D)
-Adafruit_SSD1306 ecranOLED(nombreDePixelsEnLargeur, nombreDePixelsEnHauteur, &Wire, brocheResetOLED);  
+Adafruit_SSD1306 ecranOLED(nombrePixelsLargeur, nombrePixelsHauteur, &Wire, brocheResetOLED);  
 
 
 // MESURE Pin pour mesure de la tension du capteur //////////
