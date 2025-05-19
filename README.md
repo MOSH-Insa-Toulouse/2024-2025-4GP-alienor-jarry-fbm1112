@@ -157,7 +157,7 @@ Dans le cadre d'une utilisation d'application mobile nous avons donc utilisé un
 
 Pour une utilisation plus classqieu de notre montage, l'écran OLED permet l'affichage des valeurs issues des mesures de capteurs de la plaquette impliquant l'utilisation de  la librairie Adafruit_SSD1306. Cette librairie est plus délicate à manipuler car gourmande en mémoire RAM. Pour parier cet effet, il nous est impératif de limiter l'affichage au strict nécessaire afin de controller l'utilisation de la RAM et d'éviter d'éventuels disfonctionnements du programme.
 
-Dans le dossier Arduino se trouve le programme complet strucuré qui permet de faire différens dtypes de mesures selon le capteurs utilisé (graphite ou flex sensor). Lors du lacenement de l'arduino, le prgramme effectue une calibration du potentiomètre digitale selon la valeur mesurée par le capteur graphite pour ensuite affichée un menu déroulant que l'on peut balayer à l'aide de lencodeur rotatoir.
+Dans le dossier Arduino se trouve le programme complet strucuré qui permet de faire différens dtypes de mesures selon le capteurs utilisé (graphite ou flex sensor). Lors du lacenement de l'arduino, le prgramme effectue une calibration du potentiomètre digitale selon la valeur mesurée par le capteur graphite pour ensuite affichée un menu déroulant que l'on peut balayer à l'aide de l'encodeur rotatoir.
 
 Le menu affiche 3 choix d'actions possibles : 
 
