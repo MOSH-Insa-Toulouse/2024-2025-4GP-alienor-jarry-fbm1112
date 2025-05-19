@@ -166,7 +166,7 @@ Le menu affiche 3 choix d'actions possibles :
 - Une calibration du potentiomètre digital
 
 <p align="center">
-  <img src="/Images/Plaquette_modules_test_graphite.png" alt="Plaquette_modules" width="35%"/>
+  <img src="/Images/Plaquette_modules_test_graphite.png" alt="Plaquette_modules" width="37%"/>
   <img src="/Images/Zoom_sur_plaquette.png" alt="zoom_plaquette" width="45%"/>
 </p>
 
