@@ -193,12 +193,12 @@ La variation relative de la résistance se définit par : ΔR/R0 (avec R0 la ré
 
 ### Voici les courbes caractéristiques pour des crayons F, HB et B en flexion et en compression :
 <p align="center">
-  <img src="/Images/Var_Res_Tension.png" alt="Var_Res_Tension" width="48%"/>
+  <img src="/Images/Var_Flexion.png" alt="Var_Flexion" width="48%"/>
   <img src="/Images/Var_Res_Compression.png" alt="Var_Res_Compression" width="48%"/>
 </p>
 
 ### Voici le graphe comparant le Flex Sensor et le capteur Graphite pour F, HB et B (en tension) :
-<img src="./Images/Comparaison_Flex_Graphite_Tension.png" alt="Comparaison_Flex_Graphite_Tension" width="60%"/>
+<img src="./Images/Comparaison_Flex_et_Graphite.png" alt="Comparaison_Flex_et_Graphite" width="60%"/>
 
  On remarque que la résistance augmente lorsque l'on met le capteur en tension et qu'elle diminue lors de la compression de ce dernier. En tension, la distance entre les atomes de carbones augmente et la résistance augmente avec. Le contraire se produit pour la compression.
  En fonction de la dureté du crayon utilisé, les variations relatives de résistance changent. Plus le crayon est gras (2H->H->HB->B->2B avec 2B avec le plus de carbone), moins sa variation relative de résistance est élevée.
