@@ -155,9 +155,9 @@ Afin de réaliser le code arduino nous avons utilisé l'IDE 2.3.2.
 
 Dans le cadre d'une utilisation d'application mobile nous avons donc utilisé un module bluetooth. Cela a ainsi necessité d'inclure la librairie SoftwareSerial pour initier la communication entre l'application et le pcb via le module.
 
-Pour une utilisation plus classqieu de notre montage, l'écran OLED permet l'affichage des valeurs issues des mesures de capteurs de la plaquette impliquant l'utilisation de  la librairie Adafruit_SSD1306. Cette librairie est plus délicate à manipuler car gourmande en mémoire RAM. Pour parier cet effet, il nous est impératif de limiter l'affichage au strict nécessaire afin de controller l'utilisation de la RAM et d'éviter d'éventuels disfonctionnements du programme.
+Pour une utilisation plus classique de notre montage, l'écran OLED permet l'affichage des valeurs issues des mesures de capteurs de la plaquette impliquant l'utilisation de la librairie Adafruit_SSD1306. Cette librairie est plus délicate à manipuler car gourmande en mémoire RAM. Pour parier cet effet, il nous est impératif de limiter l'affichage au strict nécessaire afin de contrôler l'utilisation de la RAM et d'éviter d'éventuels disfonctionnements du programme.
 
-Dans le dossier Arduino se trouve le programme complet strucuré qui permet de faire différens dtypes de mesures selon le capteurs utilisé (graphite ou flex sensor). Lors du lacenement de l'arduino, le prgramme effectue une calibration du potentiomètre digitale selon la valeur mesurée par le capteur graphite pour ensuite affichée un menu déroulant que l'on peut balayer à l'aide de l'encodeur rotatoir.
+Dans le dossier Arduino se trouve le programme complet strucuré qui permet de faire différents types de mesures selon le capteur utilisé (graphite ou flex sensor). Lors du lancement de l'Arduino, le programme effectue une calibration du potentiomètre digitale selon la valeur mesurée par le capteur graphite pour ensuite affichée un menu déroulant que l'on peut balayer à l'aide de l'encodeur rotatoir.
 
 Le menu affiche 3 choix d'actions possibles : 
 
@@ -165,9 +165,9 @@ Le menu affiche 3 choix d'actions possibles :
 - Une mesure du flex sensor toutes les 500ms
 - Une calibration du potentiomètre digital
 
-Pour sélectionner une action du menu il suffit d'appuyer sur le bouton central de l'encodeur ou de changer sa position afin de revenir dans le menu.
+Pour sélectionner une action du menu, il suffit de tourner la molette et d'appuyer sur le bouton central de l'encodeur. Si l'on souhaite sortir d'une action du menu, nous tournons simplement la molette de l'encodeur.
 
-
+rappeler formule Resistance R2 potard
 
 ## 5. Application Android APK sous MIT App Inventor
 Comme mentionné dans la partie précèdente, une application mobile a été réalisée sous
