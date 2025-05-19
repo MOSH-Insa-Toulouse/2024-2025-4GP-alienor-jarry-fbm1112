@@ -234,6 +234,8 @@ Vous pouvez consulter la datasheet de notre capteur [ici](./datasheet.pdf). (à 
 
 ## Conclusion
 
+(à reformuler)
+
 De plus, contrairement, à l'article "Pencil Drawn Strain Gauges and Chemiresistors on Paper" (Cheng-Wei Lin*, Zhibo Zhao*, Jaemyung Kim & Jiaxing Huang), nous avons pu mesurer la résistance avec un crayon 2H.
 
 Pour notre capteur, il a un nombre d'utilisation très limité, qui diminue très fortement pour une déformation élevée.
