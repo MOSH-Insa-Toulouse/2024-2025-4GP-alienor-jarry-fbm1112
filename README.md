@@ -198,7 +198,7 @@ La variation relative de la résistance se définit par : ΔR/R0 (avec R0 la ré
 </p>
 
 ### Voici le graphe comparant le Flex Sensor et le capteur Graphite pour F, HB et B (en tension) :
-<img src="./Images/Comparaison_Flex_et_Graphite.png" alt="Comparaison_Flex_et_Graphite" width="60%"/>
+<img src="./Images/Comparaison_Flex_Graphite.png" alt="Comparaison_Flex_Graphite" width="60%"/>
 
  On remarque que la résistance augmente lorsque l'on met le capteur en tension et qu'elle diminue lors de la compression de ce dernier. En tension, la distance entre les atomes de carbones augmente et la résistance augmente avec. Le contraire se produit pour la compression.
  En fonction de la dureté du crayon utilisé, les variations relatives de résistance changent. Plus le crayon est gras (2H->H->HB->B->2B avec 2B avec le plus de carbone), moins sa variation relative de résistance est élevée.
