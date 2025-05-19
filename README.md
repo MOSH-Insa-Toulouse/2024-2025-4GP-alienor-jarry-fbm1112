@@ -152,11 +152,11 @@ Nous avons ensuite procédé au perçage de la plaquette pour permettre l'insert
 
 Afin de réaliser le code arduino nous avons utilisé l'IDE 2.3.2.
 
-Dans le cadre d'une utilisation d'application mobile nous avons donc utilisé un module bluetooth. Cela a ainsi necessité d'inclure la librairie SoftwareSerial pour initier la communication entre l'application et le pcb via le module.
+Dans le cadre d'une utilisation d'application mobile nous avons donc utilisé un module bluetooth. Cela a ainsi nécessité d'inclure la librairie SoftwareSerial pour initier la communication entre l'application et le pcb via le module.
 
-Pour une utilisation plus classique de notre montage, l'écran OLED permet l'affichage des valeurs issues des mesures de capteurs de la plaquette impliquant l'utilisation de la librairie Adafruit_SSD1306. Cette librairie est plus délicate à manipuler car gourmande en mémoire RAM. Pour parier cet effet, il nous est impératif de limiter l'affichage au strict nécessaire afin de contrôler l'utilisation de la RAM et d'éviter d'éventuels disfonctionnements du programme.
+Pour une utilisation plus classique de notre montage, l'écran OLED permet l'affichage des valeurs issues des mesures de capteurs de la plaquette impliquant l'utilisation de la librairie Adafruit_SSD1306. Cette librairie est plus délicate à manipuler car gourmande en mémoire RAM. Pour pallier cet effet, il nous est impératif de limiter l'affichage au strict nécessaire afin de contrôler l'utilisation de la RAM et d'éviter d'éventuels disfonctionnements du programme.
 
-Dans le dossier Arduino se trouve le programme complet strucuré qui permet de faire différents types de mesures selon le capteur utilisé (graphite ou flex sensor). Lors du lancement de l'Arduino, le programme effectue une calibration du potentiomètre digitale selon la valeur mesurée par le capteur graphite pour ensuite affichée un menu déroulant que l'on peut balayer à l'aide de l'encodeur rotatoir.
+Dans le dossier Arduino se trouve le programme complet strucuré qui permet de faire différents types de mesures selon le capteur utilisé (graphite ou flex sensor). Lors du lancement de l'Arduino, le programme effectue une calibration du potentiomètre digital selon la valeur mesurée par le capteur graphite pour ensuite afficher un menu déroulant que l'on peut balayer à l'aide de l'encodeur rotatif.
 
 Le menu affiche 3 choix d'actions possibles : 
 
@@ -171,7 +171,7 @@ Le menu affiche 3 choix d'actions possibles :
 
 Pour sélectionner une action du menu, il suffit de tourner la molette et d'appuyer sur le bouton central de l'encodeur. Si l'on souhaite sortir d'une action du menu, nous tournons simplement la molette de l'encodeur.
 
-Ainsi on obtient la résistance du capteur graphite avec la formule suivante :
+Ainsi, on obtient la résistance du capteur graphite avec la formule suivante :
 
 <img src="./Images/formule_res.png" alt="res" width="30%"/>
 
