@@ -181,8 +181,7 @@ Finalement, nous n'avons pas utilisé le servomoteur comme module par manque de 
 
 ## 5. Application Android APK sous MIT App Inventor
 Comme mentionné dans la partie précèdente, une application mobile a été réalisée sous MIT App Inventor.
-L'application reçoit les données transmis par le module bluetooth HC-05. Elle affiche ensuite la valeur tranmis (des Mohms)
-pour le capteur graphite ou des ohms pour le flex sensor.
+L'application reçoit les données transmis par le module bluetooth HC-05 puis affiche la valeur reçue en Mohm pour le capteur graphite ou en ohms pour le flex sensor.
 
 
 <img src="./Images/App_face_avant.jpg" alt="face" width="30%"/>
