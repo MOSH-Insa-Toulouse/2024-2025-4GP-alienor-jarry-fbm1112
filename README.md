@@ -198,7 +198,7 @@ La variation relative de la résistance se définit par : ΔR/R0 (avec R0 la ré
 </p>
 
 ### Voici le graphe comparant le Flex Sensor et le capteur Graphite pour F, HB et B (en tension) :
-<img src="./Images/Var_Res_Flex_Tension.png" alt="BVar_Res_Flex_Tension" width="60%"/>
+<img src="./Images/Comparaison_Flex_Graphite_Tension.png" alt="Comparaison_Flex_Graphite_Tension" width="60%"/>
 
 
 ## 7. Résultats
