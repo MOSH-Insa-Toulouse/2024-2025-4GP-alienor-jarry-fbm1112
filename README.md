@@ -165,6 +165,11 @@ Le menu affiche 3 choix d'actions possibles :
 - Une mesure du flex sensor toutes les 500ms
 - Une calibration du potentiomètre digital
 
+<p align="center">
+  <img src="/Images/Plaquette_modules_test_graphite.png" alt="Plaquette_modules" width="45%"/>
+  <img src="/Images/Zoom_sur_plaquette.png" alt="zoom_plaquette" width="45%"/>
+</p>
+
 Pour sélectionner une action du menu, il suffit de tourner la molette et d'appuyer sur le bouton central de l'encodeur. Si l'on souhaite sortir d'une action du menu, nous tournons simplement la molette de l'encodeur.
 
 rappeler formule Resistance R3 potard
