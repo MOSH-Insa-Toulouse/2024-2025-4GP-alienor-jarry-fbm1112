@@ -233,14 +233,14 @@ Le flex sensor a une variation relative très élevée avec une pente a environ 
 Vous pouvez consulter la datasheet de notre capteur [ici](./datasheet.pdf). (à changer)
 
 ## Conclusion
+Malgré la composante low cost et de facilité d'usage de notre capteur, son nombre d'utilisation est très limité, qui diminue pour une déformation élevée.
+En comparaison le Flex Sensor est plus sensible à la déformation avec un signal de réponse plus régulier est continu.
 
-(à reformuler)
+La mise en place du capteur graphite dans l'industrie amène aussi une contrainte de contrôle des épaisseurs du graphène sur le papier de manière homogène. En effet, les conditions d'essai sont non reproductibles car la quantité de graphite déposée au crayon à papier (à la main) variable, induisant ainsi une résistance variable à son tour. Les méthodes de dépot de couches actuels amène ainsi des couts suplémentaires
 
-De plus, contrairement, à l'article "Pencil Drawn Strain Gauges and Chemiresistors on Paper" (Cheng-Wei Lin*, Zhibo Zhao*, Jaemyung Kim & Jiaxing Huang), nous avons pu mesurer la résistance avec un crayon 2H.
+Tout de même, sa conception fait que l'on peut mesurer des tensions et des compressions avec un même produit.
 
-Pour notre capteur, il a un nombre d'utilisation très limité, qui diminue très fortement pour une déformation élevée.
-
-Néanmoins, toutes ces mesures sont à prendre avec du recul au vu des conditions non reproductibles d'essai. En effet, la quantité de graphite déposée au crayon à papier est très variable, induisant ainsi une résistance très variable. Il serait intéressant de développer une méthode afin de déposer une quantité fixe et reproductible de graphite.       Egalement, nous conseillerons de changer de banc de test et d'utiliser un servo-moteur qui permet de créer des conditions plus reproductibles, que ce soit pour le carbone qui n'est pas déposé sur le banc de test mais également par l'angle imposé qui est précisement connu. Autrement, il faudrait reproduire des cercles de diamètres connues mais avec des déformations moins importantes afin de moins endommager le capteur.
+Aussi, à l'issue du banc de test, nous avons retenu qu'il faudrait parvenir à un meilleur système de mise sous contraintes. Les manipulations manuelles requierent d'être suffisament alerte afin d'éviter des déformations additionelles au capteur limitant son utilisation. L'implémentaion de l'installation avec un servo moteur est une piste à suivre tout comme des pin plus adapté aux cables de connexion du capteur sur le pcb.
 
 ## Contacts
 Aliénor Jarry : [ajarry@insa-toulouse.fr](mailto:ajarry@insa-toulouse.fr)  
