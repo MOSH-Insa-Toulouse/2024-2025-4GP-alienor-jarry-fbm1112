@@ -44,7 +44,7 @@ volatile int encoder0Pos = 1;
 #include <SPI.h>
 const byte csPin           = 11;      // MCP42100 chip select pin
 const int  maxPositions    = 256;     // wiper can move from 0 to 255 = 256 Positions
-const long rAB             = 52200;   // 50k pot resistance between terminals A and B, mais pour ajuster au multimètre, je mets 47500
+const long rAB             = 52200;   // 50k pot resistance between terminals A and B, mais pour ajuster au multimètre, je mets 52200
 const byte rWiper          = 125;     // 125 ohms pot wiper resistance
 const byte pot0            = 0x11;    // pot0 addr // B 0001 0001
 const byte pot0Shutdown    = 0x21;    // pot0 shutdown // B 0010 0001
