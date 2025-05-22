@@ -230,7 +230,7 @@ Le flex sensor a une variation relative très élevée avec une pente a environ 
 
 
 ## 7. Datasheet du capteur
-Vous pouvez consulter la datasheet de notre capteur [ici](./datasheet.pdf).
+Vous pouvez consulter la datasheet de notre capteur [ici](GSS250_Technical_Datasheet_Official.pdf).
 
 ## Conclusion
 Malgré la composante low cost et de facilité d'usage de notre capteur, son nombre d'utilisation est très limité, qui diminue pour une déformation élevée.
