@@ -101,7 +101,6 @@ Puis, nous sommes allés dans l'onglet "éditeur de PCB" sous Kicad pour designe
 **Voici le rendu 3D de notre PCB, avec ses différents modules et composants intégrés**:
 ![PCB_3D ](./Images/PCB_3D.png)
 
-Toutes les ressources utilisées pour notre Kicad (empreintes, schéma etc...) sont disponibles dans notre dossier Kicad.
 
 ### **Erreurs réalisées** : 
 
