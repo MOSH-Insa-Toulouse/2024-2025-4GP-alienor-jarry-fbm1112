@@ -174,7 +174,7 @@ Ainsi, on obtient la résistance du capteur graphite avec la formule suivante :
 
 <img src="./Images/formule_res.png" alt="res" width="30%"/>
 
-Et dans notre cas, notre résistance R3 est variable : elle est issue du réglage du potentiomètreà l'aide d'un méthode de dichotomie.
+Et dans notre cas, notre résistance R3 est variable : elle est issue du réglage du potentiomètre à l'aide d'une méthode de dichotomie.
 
 Finalement, nous n'avons pas utilisé le servomoteur comme module par manque de temps.
 
